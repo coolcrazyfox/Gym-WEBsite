@@ -9,6 +9,11 @@ const oswald = Oswald({
   weight: ["200", "300", "400", "500", "600", "700"],
   variable: "--font-oswald",
 });
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["100", "300", "400", "500", "700", "900"],
+  variable: "--font-roboto",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -22,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={oswald.className}>
+      <body className={`${oswald.variable}${roboto.variable}`}>
         <Header />
         {children}
         <Footer />
