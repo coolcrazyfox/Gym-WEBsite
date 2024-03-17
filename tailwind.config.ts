@@ -25,7 +25,17 @@ const config: Config = {
       hero: "url(/assets/img/hero/bg.png)",
       membership: "url(/assets/img/membership/bg.jpg)",
     },
-    extend: {},
+    extend: {
+      color: {
+        primary: {
+          DEFAULT: "#333",
+          100: "#484848",
+          200: "#151515",
+          300: "#111",
+        },
+        accent: "#d4000d",
+      },
+    },
   },
   plugins: [],
 };
