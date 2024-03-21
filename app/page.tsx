@@ -1,5 +1,6 @@
 import About from "./components/About";
 import Blog from "./components/Blog";
+import Brands from "./components/Brands";
 import Classes from "./components/Classes";
 import Hero from "./components/Hero";
 import Membership from "./components/Membership";
@@ -16,6 +17,7 @@ export default function Home() {
       <Membership />
       <Testimonial />
       <Blog />
+      <Brands />
       <div className={"h-[3000px]"}></div>
     </main>
   );
