@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import { Link as ScrollLink } from "react-scroll";
 
 const links = [
   { name: "home", target: "home", offset: -100 },
@@ -11,8 +12,25 @@ const links = [
   { name: "contact", target: "contact", offset: 0 },
 ];
 
-const Navbar = ({ containerStyles }: { containerStyles: string }) => {
-  return <nav>Navbar</nav>;
+const NavBar = ({ containerStyles }: { containerStyles: string }) => {
+  return (
+    <nav className={`${containerStyles}`}>
+      {links.map((link, index) => {
+        return (
+          <ScrollLink
+            offset={link.offset}
+            to={link.target}
+            smooth
+            spy
+            activeClass="active"
+            key={index}
+          >
+            {link.name}
+          </ScrollLink>
+        );
+      })}
+    </nav>
+  );
 };
 
-export default Navbar;
+export default NavBar;
