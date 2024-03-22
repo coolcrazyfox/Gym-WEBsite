@@ -18,6 +18,7 @@ const NavBar = ({ containerStyles }: { containerStyles: string }) => {
       {links.map((link, index) => {
         return (
           <ScrollLink
+            className="cursor-pointer hover:text-accent transition-all"
             offset={link.offset}
             to={link.target}
             smooth
