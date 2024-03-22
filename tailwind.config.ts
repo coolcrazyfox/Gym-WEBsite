@@ -26,7 +26,7 @@ const config: Config = {
       membership: "url(/assets/img/membership/bg.jpg)",
     },
     extend: {
-      color: {
+      colors: {
         primary: {
           DEFAULT: "#333",
           100: "#484848",
