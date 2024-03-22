@@ -6,8 +6,8 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <header className="fixed left-0 right-0 w-full bg-primary h-[90px] ">
-      <div className=" container mx-auto">
+    <header className="fixed left-0 right-0 w-full bg-primary-200 h-[100px] ">
+      <div className=" container h-full flex items-center justify-between mx-auto">
         <Link href={""}>
           <Image src={"/assets/img/logo.png"} width={117} height={55} alt="" />
         </Link>
