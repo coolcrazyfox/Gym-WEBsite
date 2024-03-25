@@ -37,6 +37,10 @@ const Header = () => {
         />
         <NavBar containerStyles=" text-white  uppercase flex gap-4 hidden xl:flex" />
         <div>
+          <div>
+            <button>register</button>
+            <button>login</button>
+          </div>
           <button
             onClick={() => setActiveNavBa(!activeNavBar)}
             className="text-white xl:hidden"
