@@ -26,8 +26,12 @@ const Header = () => {
         <Link href={""}>
           <Image src={"/assets/img/logo.png"} width={117} height={55} alt="" />
         </Link>
-        <MobileNav containerStyles="flex flex-col text-center gap-8 fixed bg-primary-200 w-full left-0 top-[124px] text-white  xl:hidden" />
-        <NavBar containerStyles=" text-white  flex gap-4 hidden xl:flex" />
+        <MobileNav
+          containerStyles={`${
+            activeHeader ? "top-[90px]" : "top-[124px] "
+          } flex flex-col text-center gap-8 fixed bg-primary-200 w-full left-0 text-white text-base uppercase font-medium  transition-all xl:hidden`}
+        />
+        <NavBar containerStyles=" text-white  uppercase flex gap-4 hidden xl:flex" />
       </div>
     </header>
   );
