@@ -20,7 +20,7 @@ const Header = () => {
     <header
       className={`${
         activeHeader ? "h-[100px]" : "h-[124px] "
-      } fixed top-0 w-full bg-primary-200 h-[100px] transition-all z-50`}
+      } fixed max-w-[2048px] top-0 w-full bg-primary-200 h-[100px] transition-all z-50`}
     >
       <div className=" container h-full flex items-center justify-between mx-auto">
         <Link href={""}>
