@@ -36,10 +36,14 @@ const Header = () => {
           } flex flex-col text-center gap-8 fixed bg-primary-200 w-full left-0 text-white text-base uppercase font-medium  transition-all xl:hidden`}
         />
         <NavBar containerStyles=" text-white  uppercase flex gap-4 hidden xl:flex" />
-        <div className="flex items-center gsp-4 ">
-          <div className="flex items-center gsp-4 text-white">
-            <button>register</button>
-            <button>login</button>
+        <div className="flex items-center gap-4 ">
+          <div className="flex items-center gap-4 text-white ">
+            <button className="hover:text-accent transition-all uppercase">
+              register
+            </button>
+            <button className="hover:text-accent transition-all uppercase">
+              login
+            </button>
           </div>
           <button
             onClick={() => setActiveNavBa(!activeNavBar)}
