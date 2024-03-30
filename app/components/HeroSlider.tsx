@@ -9,7 +9,7 @@ const HeroSlider = () => {
     <Swiper>
       <SwiperSlide className="h-full flex justify-end pt-48">
         <div>
-          <h1 className="h1">
+          <h1 className="h1 text-center lg:text-left mb-2">
             <span> Breakthrough Your Limits, </span> Embrace Your Possibilities
           </h1>
           <p>Your Body, Your Journey, Your Succes</p>
