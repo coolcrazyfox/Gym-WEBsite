@@ -18,7 +18,7 @@ const HeroSlider = () => {
           </p>
           <SuperButton
             text={"Get started"}
-            containerStyles="w-[196px] h-[62px] bg-red-300"
+            containerStyles="w-[196px] h-[62px] "
           />
         </div>
       </SwiperSlide>
