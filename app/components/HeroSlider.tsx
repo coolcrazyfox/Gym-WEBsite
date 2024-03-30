@@ -10,7 +10,7 @@ const HeroSlider = () => {
       <SwiperSlide className="h-full flex justify-end pt-48">
         <div>
           <h1 className="h1">
-            <span> Where hard</span> work meets success
+            <span> Breakthrough Your Limits, </span> Embrace Your Possibilities
           </h1>
           <p>Your Body, Your Journey, Your Succes</p>
         </div>
