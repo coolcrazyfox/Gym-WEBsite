@@ -3,6 +3,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
+import SuperButton from "./SuperButton";
 
 const HeroSlider = () => {
   return (
@@ -15,6 +16,7 @@ const HeroSlider = () => {
           <p className="text-white italic text-center lg:text-left mb-4">
             Your Body, Your Journey, Your Succes
           </p>
+          <SuperButton />
         </div>
       </SwiperSlide>
     </Swiper>
