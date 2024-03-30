@@ -16,7 +16,7 @@ const HeroSlider = () => {
           <p className="text-white italic text-center lg:text-left mb-4">
             Your Body, Your Journey, Your Succes
           </p>
-          <SuperButton text={"Get started"} containerStyles="" />
+          <SuperButton text={"Get started"} containerStyles="w-[198px]" />
         </div>
       </SwiperSlide>
     </Swiper>
