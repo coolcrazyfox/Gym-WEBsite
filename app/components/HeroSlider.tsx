@@ -8,18 +8,21 @@ import SuperButton from "./SuperButton";
 const HeroSlider = () => {
   return (
     <Swiper>
-      <SwiperSlide className="h-full flex justify-end pt-48">
-        <div>
-          <h1 className="h1 text-center lg:text-left mb-2">
-            <span> Breakthrough Your Limits, </span> Embrace Your Possibilities
-          </h1>
-          <p className="text-white italic text-center lg:text-left mb-4">
-            Your Body, Your Journey, Your Succes
-          </p>
-          <SuperButton
-            text={"Get started"}
-            containerStyles="w-[196px] h-[62px] "
-          />
+      <SwiperSlide>
+        <div className="h-full flex justify-end pt-48">
+          <div className="flex flex-col items-center lg:items-start lg:max-w-[700px]">
+            <h1 className="h1 text-center lg:text-left mb-2">
+              <span> Breakthrough Your Limits, </span> Embrace Your
+              Possibilities
+            </h1>
+            <p className="text-white italic text-center lg:text-left mb-4">
+              Your Body, Your Journey, Your Succes
+            </p>
+            <SuperButton
+              text={"Get started"}
+              containerStyles="w-[196px] h-[62px] "
+            />
+          </div>
         </div>
       </SwiperSlide>
     </Swiper>
