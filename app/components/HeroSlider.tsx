@@ -12,7 +12,7 @@ const HeroSlider = () => {
           <h1 className="h1">
             <span> Where hard</span> work meets success
           </h1>
-          <p>Where hard work meets success</p>
+          <p>Your Body, Your Journey, Your Succes</p>
         </div>
       </SwiperSlide>
     </Swiper>
