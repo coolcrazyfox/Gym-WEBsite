@@ -7,7 +7,12 @@ const SuperButton = ({
   text: string;
   containerStyles: string;
 }) => {
-  return <button></button>;
+  return (
+    <button>
+      <span></span>
+      <span>{text}</span>
+    </button>
+  );
 };
 
 export default SuperButton;
