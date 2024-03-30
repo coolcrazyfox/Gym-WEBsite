@@ -8,7 +8,9 @@ const SuperButton = ({
   containerStyles: string;
 }) => {
   return (
-    <button>
+    <button
+      className={`${containerStyles} group relative cursor-pointer overflow-hidden`}
+    >
       <span></span>
       <span>{text}</span>
     </button>
