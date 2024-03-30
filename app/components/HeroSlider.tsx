@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import SuperButton from "./SuperButton";
+import SwiperNavButtons from "./SwiperNavButtons";
 
 const HeroSlider = () => {
   return (
@@ -25,6 +26,7 @@ const HeroSlider = () => {
           </div>
         </div>
       </SwiperSlide>
+      <SwiperNavButtons containerStyles="" btnStyles="" iconStyles="" />
     </Swiper>
   );
 };
