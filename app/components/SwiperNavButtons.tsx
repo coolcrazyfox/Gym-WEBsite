@@ -1,6 +1,6 @@
 "use client";
 import { useSwiper } from "swiper/react";
-import { SlArrowLeft, SlArrowRight  } from "react-icons/sl";
+import { SlArrowLeft, SlArrowRight } from "react-icons/sl";
 
 const SwiperNavButtons = ({
   containerStyles,
@@ -11,13 +11,14 @@ const SwiperNavButtons = ({
   btnStyles: string;
   iconStyles: string;
 }) => {
+  const swiper = useSwiper();
   return (
     <div className={`${containerStyles}`}>
-      <button className={`${btnStyles}`}>
+      <button className={`${btnStyles}`} onClick={() => swiper.slidePrev()}>
         <SlArrowLeft className={`${iconStyles}`} />
       </button>
-      <button className={`${btnStyles}`}>
-        <SlArrowRight  className={`${iconStyles}`} />
+      <button className={`${btnStyles}`} onClick={() => swiper.slideNext()}>
+        <SlArrowRight className={`${iconStyles}`} />
       </button>
     </div>
   );
