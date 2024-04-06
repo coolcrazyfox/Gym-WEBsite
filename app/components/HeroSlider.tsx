@@ -8,7 +8,7 @@ import SwiperNavButtons from "./SwiperNavButtons";
 
 const HeroSlider = () => {
   return (
-    <Swiper>
+    <Swiper className="h-full">
       <SwiperSlide>
         <div className="h-full flex justify-end pt-48">
           <div className="flex flex-col items-center lg:items-start lg:max-w-[700px]">
