@@ -19,9 +19,9 @@ const HeroSlider = () => {
               Your Body, Your Journey, Your Succes
             </p>
             <p className="text-white italic text-center lg:text-left mb-4">
-              "GYM - your name" is a social exercise platform that allows user
-              to easily track their health progress, exercise and fitness
-              patterns, create their own programs and share them with the larger
+              GYM - YOUR NAME is a social exercise platform that allows user to
+              easily track their health progress, exercise and fitness patterns,
+              create their own programs and share them with the larger
               community.
             </p>
             <SuperButton
