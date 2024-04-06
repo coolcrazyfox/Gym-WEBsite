@@ -14,7 +14,11 @@ const startAnimationContainer = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
-    transition: { staggerChildren: 0.4, duration: 0.5, ease: " linear" },
+    transition: {
+      staggerChildren: 0.4,
+      duration: 0.5,
+      ease: " linear",
+    },
   },
 };
 const initItem = {
@@ -22,7 +26,10 @@ const initItem = {
   show: {
     y: 0,
     opacity: 1,
-    transition: { duration: 0.5, ease: [0.25, 0.6, 0.3, 0.8] },
+    transition: {
+      duration: 0.5,
+      ease: [0.25, 0.6, 0.3, 0.8],
+    },
   },
 };
 
