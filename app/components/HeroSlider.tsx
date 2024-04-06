@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import SuperButton from "./SuperButton";
 import SwiperNavButtons from "./SwiperNavButtons";
 import { motion } from "framer-motion";
+import { fadeIn } from "@/lib/variants";
 
 const HeroSlider = () => {
   return (
@@ -13,18 +14,34 @@ const HeroSlider = () => {
       <SwiperSlide>
         <div className="h-full flex justify-end pt-48">
           <div className="flex flex-col items-center lg:items-start lg:max-w-[700px]">
-            <h1 className="h1 text-center lg:text-left mb-2">
-              <span> No pain </span> No gain
-            </h1>
+            <motion.h1
+              variants={fadeIn("up", 0.4)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.2 }}
+              className="h1 text-center lg:text-left mb-2"
+            >
+              <span> Bodies of </span>
+              stamina & strength
+            </motion.h1>
             {/* <p className="text-white italic text-center lg:text-left mb-4">
               Your Body, Your Journey, Your Success
             </p> */}
-            <p className="text-white italic text-center lg:text-left mb-4">
+            {/* <p className="text-white italic text-center lg:text-left mb-4">
+              No pain no gain
+            </p> */}
+            <motion.p
+              variants={fadeIn("up", 0.6)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.2 }}
+              className="text-white italic text-center lg:text-left mb-4"
+            >
               GYM - YOUR NAME is a social exercise platform that allows user to
               easily track their health progress, exercise and fitness patterns,
               create their own programs and share them with the larger
               community.
-            </p>
+            </motion.p>
             <SuperButton
               text={"Join Now"}
               containerStyles="w-[196px] h-[62px] "
