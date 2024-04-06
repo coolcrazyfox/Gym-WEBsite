@@ -36,7 +36,7 @@ const About = () => {
             excepturi distinctio voluptatibus sapiente qui eaque eius.
           </p>
         </div>
-        <div>
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mb-16">
           {initialState.map((item, index) => {
             return (
               <div key={index}>
