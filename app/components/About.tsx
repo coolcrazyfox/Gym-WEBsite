@@ -40,9 +40,11 @@ const About = () => {
           {initialState.map((item, index) => {
             return (
               <div key={index}>
-                <div>{item.icon}</div>
+                <div className="text-4xl bg-primary-300 text-white w-[86px] h-[86px] rounded-full flex justify-center items-center">
+                  {item.icon}
+                </div>
                 <div>
-                  <h4>{item.title}</h4>
+                  <h4 className="h4 text-accent">{item.title}</h4>
                   <p>{item.description}</p>
                 </div>
               </div>
