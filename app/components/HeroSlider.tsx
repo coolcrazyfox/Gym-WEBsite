@@ -26,7 +26,11 @@ const HeroSlider = () => {
           </div>
         </div>
       </SwiperSlide>
-      <SwiperNavButtons containerStyles="" btnStyles="" iconStyles="" />
+      <SwiperNavButtons
+        containerStyles=""
+        btnStyles="border border-accent text-white"
+        iconStyles=""
+      />
     </Swiper>
   );
 };
