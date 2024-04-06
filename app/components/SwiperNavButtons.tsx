@@ -1,6 +1,9 @@
 "use client";
 import { useSwiper } from "swiper/react";
-import { ImArrowLeft, ImArrowRight } from "react-icons/im";
+import {
+  TbSquareRoundedArrowLeft,
+  TbSquareRoundedArrowRight,
+} from "react-icons/tb";
 
 const SwiperNavButtons = ({
   containerStyles,
@@ -13,11 +16,11 @@ const SwiperNavButtons = ({
 }) => {
   return (
     <div className={`${containerStyles}`}>
-      <button>
-        <ImArrowLeft className={`${iconStyles}`} />
+      <button className={`${btnStyles}`}>
+        <TbSquareRoundedArrowLeft className={`${iconStyles}`} />
       </button>
-      <button>
-        <ImArrowRight className={`${iconStyles}`} />
+      <button className={`${btnStyles}`}>
+        <TbSquareRoundedArrowRight className={`${iconStyles}`} />
       </button>
     </div>
   );
