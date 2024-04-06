@@ -42,10 +42,17 @@ const HeroSlider = () => {
               create their own programs and share them with the larger
               community.
             </motion.p>
-            <SuperButton
-              text={"Join Now"}
-              containerStyles="w-[196px] h-[62px] "
-            />
+            <motion.div
+              variants={fadeIn("up", 0.8)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.2 }}
+            >
+              <SuperButton
+                text={"Join Now"}
+                containerStyles="w-[196px] h-[62px] "
+              />
+            </motion.div>
           </div>
         </div>
       </SwiperSlide>
