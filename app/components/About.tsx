@@ -10,7 +10,8 @@ const initialState = [
   {
     icon: <FaUsers />,
     title: "personal trainers",
-    description: "40+ Total trainers can help you make a better programs",
+    description:
+      "Hire a personal trainer at our gym and reach your fitness goals faster!  Our trainers will  create a personalized workout plan tailored to your needs and guide you thru your  process of getting in  shape.",
   },
   {
     icon: <FaDollarSign />,
@@ -46,9 +47,8 @@ const About = () => {
             viewport={{ once: false, amount: 0.2 }}
             className="max-w-[680px] mx-auto text-center"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae enim
-            quibusdam soluta culpa eveniet, autem in. Error voluptate atque
-            excepturi distinctio voluptatibus sapiente qui eaque eius.
+            We aim to inspire individuals to prioritize their health and to show
+            them that a fit body is a key component of a healthy life.
           </motion.p>
         </div>
         <motion.div
