@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import CountUp from "react-countup";
 import { motion, useInView } from "framer-motion";
 import { FaUsers, FaClock, FaTrophy, FaBriefcase } from "react-icons/fa";
+import { fadeIn } from "@/lib/variants";
 
 const initialStats = [
   { count: 250, icon: FaUsers, name: "training happy clients" },
@@ -10,42 +11,19 @@ const initialStats = [
   { count: 25, icon: FaBriefcase, name: "training courses" },
   { count: 19, icon: FaTrophy, name: "international awards" },
 ];
-const startAnimationContainer = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.4,
-      duration: 0.5,
-      ease: " linear",
-    },
-  },
-};
-const initItem = {
-  hidden: { y: 20, opacity: 0 },
-  show: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.5,
-      ease: [0.25, 0.6, 0.3, 0.8],
-    },
-  },
-};
 
 const Achievements = () => {
   const ref = useRef(null);
   const isInView = useInView(ref);
   return (
-    <div>
+    <motion.div
+      variants={fadeIn("up", 0.6)}
+      initial={"hidden"}
+      whileInView={"show"}
+      viewport={{ once: false, amount: 0.2 }}
+    >
       <div className="container mx-auto">
-        <motion.div
-          className="grid grid-cols-2 md:grid-cols-4 gap-16"
-          variants={startAnimationContainer}
-          initial={"hidden"}
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.3 }}
-        >
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-16">
           {initialStats.map((item, index) => {
             return (
               <div
@@ -69,9 +47,9 @@ const Achievements = () => {
               </div>
             );
           })}
-        </motion.div>
+        </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -71,7 +71,7 @@ const About = () => {
             );
           })}
         </div>
-        {/* <Achievements /> */}
+        <Achievements />
       </div>
     </section>
   );
