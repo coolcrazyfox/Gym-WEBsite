@@ -10,20 +10,18 @@ const initialState = [
   {
     icon: <FaUsers />,
     title: "personal trainers",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti laborum vel illo.",
+    description: "40+ Total trainers can help you make a better programs",
   },
   {
     icon: <FaDollarSign />,
     title: "best prices",
     description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti laborum vel illo.",
+      "We have the best prices special for you. Total exercises can be choose on your programs",
   },
   {
     icon: <IoMdFitness />,
     title: "advanced equipment",
-    description:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti laborum vel illo.",
+    description: "We only have modern machines and equipment.",
   },
 ];
 
