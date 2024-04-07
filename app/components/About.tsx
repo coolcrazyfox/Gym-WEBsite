@@ -53,7 +53,13 @@ const About = () => {
             excepturi distinctio voluptatibus sapiente qui eaque eius.
           </motion.p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mb-16">
+        <motion.div
+          variants={fadeIn("up", 0.8)}
+          initial={"hidden"}
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 mb-16"
+        >
           {initialState.map((item, index) => {
             return (
               <div
@@ -70,7 +76,7 @@ const About = () => {
               </div>
             );
           })}
-        </div>
+        </motion.div>
         <Achievements />
       </div>
     </section>
