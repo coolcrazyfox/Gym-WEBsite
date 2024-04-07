@@ -48,10 +48,9 @@ const Achievements = () => {
         >
           {initialStats.map((item, index) => {
             return (
-              <motion.div
+              <div
                 key={index}
                 className="flex flex-col justify-center items-center"
-                variants={initItem}
               >
                 <div className="border border-accent/90 w-[140px] h-[140px] mx-auto rounded-full p-1 mb-6">
                   <div
@@ -67,7 +66,7 @@ const Achievements = () => {
                   <item.icon className="text-3xl text-accent mb-2" />
                   <h4 className="h4">{item.name}</h4>
                 </div>
-              </motion.div>
+              </div>
             );
           })}
         </motion.div>
