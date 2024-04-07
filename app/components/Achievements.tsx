@@ -37,7 +37,7 @@ const Achievements = () => {
   const ref = useRef(null);
   const isInView = useInView(ref);
   return (
-    <section>
+    <div>
       <div className="container mx-auto">
         <motion.div
           className="grid grid-cols-2 md:grid-cols-4 gap-16"
@@ -72,7 +72,7 @@ const Achievements = () => {
           })}
         </motion.div>
       </div>
-    </section>
+    </div>
   );
 };
 
