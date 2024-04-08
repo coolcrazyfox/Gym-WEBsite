@@ -69,12 +69,17 @@ const Classes = () => {
                 >
                   {item.description}
                 </motion.p>
-                <div>
+                <motion.div
+                  variants={fadeIn("up", 0.8)}
+                  initial={"hidden"}
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.2 }}
+                >
                   <SuperButton
                     text={"let start"}
                     containerStyles="h-[46px]w-[184px] px-1"
                   />
-                </div>
+                </motion.div>
               </div>
             </div>
           );

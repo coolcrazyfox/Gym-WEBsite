@@ -23,6 +23,8 @@ const config: Config = {
     },
     backgroundImage: {
       hero: "url(/assets/img/hero/bg.png)",
+      hero_second: "url(/assets/img/hero/bg1.jpg)",
+      hero_third: "url(/assets/img/hero/bg2.jpg)",
       membership: "url(/assets/img/membership/bg.jpg)",
     },
     extend: {
