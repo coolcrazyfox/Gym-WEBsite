@@ -35,7 +35,13 @@ const initClasses = [
 const Classes = () => {
   return (
     <section id="class">
-      <div className="grid grid-cols-1 lg:grid-cols-2">
+      <motion.div
+        variants={fadeIn("up", 0.6)}
+        initial={"hidden"}
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.2 }}
+        className="grid grid-cols-1 lg:grid-cols-2"
+      >
         {initClasses.map((item, index) => {
           return (
             <div
@@ -45,7 +51,15 @@ const Classes = () => {
               <div className="bg-black/50 absolute w-full h-full top-0 z-10"></div>
               <Image src={item.image} fill className="object-cover" alt="" />
               <div className="z-30 max-w-[380px]  text-center flex flex-col items-center justify-center gap-4">
-                <h3 className="h3 text-accent">{item.name}</h3>
+                <motion.h3
+                  variants={fadeIn("up", 0.4)}
+                  initial={"hidden"}
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.2 }}
+                  className="h3 text-accent"
+                >
+                  {item.name}
+                </motion.h3>
                 <p className="text-white">{item.description}</p>
                 <div>
                   <SuperButton
@@ -57,7 +71,7 @@ const Classes = () => {
             </div>
           );
         })}
-      </div>
+      </motion.div>
     </section>
   );
 };
