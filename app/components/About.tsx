@@ -11,7 +11,7 @@ const initialState = [
     icon: <FaUsers />,
     title: "personal trainers",
     description:
-      "Hire a personal trainer at our gym and reach your fitness goals faster!  Our trainers will  create a personalized workout plan tailored to your needs and guide you thru your  process of getting in  shape.",
+      " Our trainers will  create a personalized workout plan tailored to your needs and guide you thru your  process of getting in  shape.",
   },
   {
     icon: <FaDollarSign />,
@@ -69,7 +69,7 @@ const About = () => {
                 </div>
                 <div className="flex flex-col justify-center items-center gap-2 text-center">
                   <h4 className="h4 text-primary-300 ">{item.title}</h4>
-                  <p>{item.description}</p>
+                  <p className="mx-1">{item.description}</p>
                 </div>
               </div>
             );
