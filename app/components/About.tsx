@@ -75,7 +75,12 @@ const About = () => {
             );
           })}
         </motion.div>
-        <Achievements />
+        <motion.div  variants={fadeIn("up", 1)}
+            initial={"hidden"}
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.2 }}>
+          <Achievements />
+        </motion.div>
       </div>
     </section>
   );

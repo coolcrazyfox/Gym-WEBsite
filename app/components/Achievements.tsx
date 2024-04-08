@@ -16,12 +16,7 @@ const Achievements = () => {
   const ref = useRef(null);
   const isInView = useInView(ref);
   return (
-    <motion.div
-      variants={fadeIn("up", 1)}
-      initial={"hidden"}
-      whileInView={"show"}
-      viewport={{ once: false, amount: 0.2 }}
-    >
+    <section>
       <div className="container mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-16">
           {initialStats.map((item, index) => {
@@ -49,7 +44,7 @@ const Achievements = () => {
           })}
         </div>
       </div>
-    </motion.div>
+    </section>
   );
 };
 
