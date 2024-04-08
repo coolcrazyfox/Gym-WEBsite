@@ -42,7 +42,7 @@ const Classes = () => {
               key={index}
               className="relative w-full h-[300px] lg:h-[485px] flex flex-col justify-center items-center"
             >
-              <div className="bg-black/50 absolute w-full h-full top-0 z-10`"></div>
+              <div className="bg-black/50 absolute w-full h-full top-0 z-10"></div>
               <Image src={item.image} fill className="object-cover" alt="" />
               <div className="z-30 max-w-[380px]  text-center flex flex-col items-center justify-center gap-4">
                 <h3 className="h3 text-accent">{item.name}</h3>
