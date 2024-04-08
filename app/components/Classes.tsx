@@ -60,7 +60,15 @@ const Classes = () => {
                 >
                   {item.name}
                 </motion.h3>
-                <p className="text-white">{item.description}</p>
+                <motion.p
+                  variants={fadeIn("up", 0.6)}
+                  initial={"hidden"}
+                  whileInView={"show"}
+                  viewport={{ once: false, amount: 0.2 }}
+                  className="text-white"
+                >
+                  {item.description}
+                </motion.p>
                 <div>
                   <SuperButton
                     text={"let start"}
