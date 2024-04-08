@@ -44,11 +44,20 @@ const Classes = () => {
             >
               <div className="bg-black/50 absolute w-full h-full top-0 z-10`"></div>
               <Image src={item.image} fill className="object-cover" alt="" />
+              <div className="max-w-[380px] z-30 text-center flex flex-col items-center justify-center gap-4">
+                <h3 className="h3 text-accent">{item.name}</h3>
+                <p className="text-white">{item.description}</p>
+                <div>
+                  <SuperButton
+                    text={"let start"}
+                    containerStyles="h-[46px]w-[164px]"
+                  />
+                </div>
+              </div>
             </div>
           );
         })}
       </div>
-      <SuperButton text={"sed"} containerStyles="" />
     </section>
   );
 };
