@@ -69,12 +69,6 @@ const HeroSlider = () => {
               <span> No pain </span>
               No gain
             </motion.h1>
-            {/* <p className="text-white italic text-center lg:text-left mb-4">
-              Your Body, Your Journey, Your Success
-            </p> */}
-            {/* <p className="text-white italic text-center lg:text-left mb-4">
-              No pain no gain
-            </p> */}
             <motion.p
               variants={fadeIn("up", 0.6)}
               initial="hidden"
