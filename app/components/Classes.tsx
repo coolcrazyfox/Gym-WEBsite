@@ -24,11 +24,30 @@ const initClasses = [
     description:
       "Cardiovascular fitness refers to a health-related component of physical fitness that is brought about by sustained physical activity",
   },
+  {
+    name: "crossfit ",
+    image: "/assets/img/classes/crossfit.jpg",
+    description:
+      "Bodybuilding is the practice of progressive resistance exercise to build, control, and develop one's muscles via hypertrophy.",
+  },
 ];
 
 const Classes = () => {
   return (
-    <section className="h-screen bg-green-300" id="class">
+    <section id="class">
+      <div className="grid grid-cols-1 lg:grid-cols-2">
+        {initClasses.map((item, index) => {
+          return (
+            <div
+              key={index}
+              className="relative w-full h-[300px] lg:h-[485px] flex flex-col justify-center items-center"
+            >
+              <div className="bg-black/50 absolute w-full h-full top-0 z-10`"></div>
+              <Image src={item.image} fill className="object-cover" alt="" />
+            </div>
+          );
+        })}
+      </div>
       <SuperButton text={"sed"} containerStyles="" />
     </section>
   );
