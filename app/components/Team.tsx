@@ -75,14 +75,19 @@ const Team = () => {
                 <div className="relative w-[320px] h-[360px] mx-auto mb-4">
                   <Image src={trainer.avatar} fill alt="" />
                 </div>
-                <h4> {trainer.name}</h4>
-                <p>{trainer.role}</p>
-                <p>{trainer.description}</p>
-                <div>
+                <h4 className="h4 mb-2"> {trainer.name}</h4>
+                <p className="uppercase text-xs tracking-[3px]mb-2">
+                  {trainer.role}
+                </p>
+                <p className="mb-6">{trainer.description}</p>
+                <div className="flex gap-12 justify-center">
                   {trainer.social.map((s, i) => {
                     return (
                       <div key={i}>
-                        <Link href={s.link} className="hover:text-accent">
+                        <Link
+                          href={s.link}
+                          className="hover:text-accent transition-all"
+                        >
                           <s.icon className="text-lg" />
                         </Link>
                       </div>
