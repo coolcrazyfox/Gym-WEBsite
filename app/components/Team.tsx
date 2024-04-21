@@ -70,8 +70,22 @@ const Team = () => {
   return (
     <section className="py- xl:h-[110vh] " id="team">
       <div className="container mx-auto  h-full flex flex-col items-center justify-center">
-        <h2 className="h2 text-center mb-6">Our trainers</h2>
-        <div className=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12 mb-12">
+        <motion.h2
+          variants={fadeIn("up", 0.4)}
+          initial={"hidden"}
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="h2 text-center mb-6 text-accent"
+        >
+          Our trainers
+        </motion.h2>
+        <motion.div
+          variants={fadeIn("up", 0.6)}
+          initial={"hidden"}
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12 mb-12"
+        >
           {trainerInitData.map((trainer, index) => {
             return (
               <div
@@ -85,7 +99,7 @@ const Team = () => {
                 <p className="uppercase text-xs tracking-[3px] mb-2 text-accent">
                   {trainer.role}
                 </p>
-                <p className="mb-6 max-w-[320px] mx-auto min-h-[250px] ">
+                <p className="mb-6 max-w-[320px] mx-auto md:min-h-[230px]  lg:min-h-[250px] ">
                   {trainer.description}
                 </p>
                 <div className="flex gap-12 justify-center">
@@ -105,13 +119,18 @@ const Team = () => {
               </div>
             );
           })}
-        </div>
-        <div>
+        </motion.div>
+        <motion.div
+          variants={fadeIn("up", 0.8)}
+          initial={"hidden"}
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+        >
           <SuperButton
             containerStyles="w-[196px] h-[62px]"
             text="See all trainers"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );
