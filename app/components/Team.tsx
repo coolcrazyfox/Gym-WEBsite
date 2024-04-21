@@ -39,10 +39,10 @@ const trainerInitData = [
   },
   {
     avatar: "/assets/img/trainers/david.jpg",
-    name: "Cameron David",
+    name: "David Williams",
     role: " BodyBuilder coach",
     description:
-      "Cameron Nichol is recognized for his expertise in rowing as a former Olympic rower and the founder of RowingWOD, where he utilizes his experience to enhance the rowing performance of CrossFit athletes. His approach to integrating rowing with CrossFit is designed to improve overall fitness and athletic ability.",
+      "Monster of the bodybuilding profession David is an English former professional bodybuilder, and he is known for high-intensity training, and massive size, shredded glutes, and hamstrings. ",
     social: [
       { icon: FaInstagramSquare, link: "https://instagram.com" },
       { icon: FaFacebookSquare, link: "https://facebook.com" },
@@ -51,10 +51,10 @@ const trainerInitData = [
   },
   {
     avatar: "/assets/img/trainers/sofia.jpg",
-    name: "Cameron Sofia",
+    name: "Sofia Kaiser",
     role: " Fitness coach",
     description:
-      "Cameron Nichol is recognized for his expertise in rowing as a former Olympic rower and the founder of RowingWOD, where he utilizes his experience to enhance the rowing performance of CrossFit athletes. His approach to integrating rowing with CrossFit is designed to improve overall fitness and athletic ability.",
+      "What makes Sofia a fitness expert worth following? She, too, values a holistic approach to fitness. She offers dance, yoga, and Pilates-based workouts that focus on the whole body, and she doesn’t rely solely on traditional training techniques – her high-energy classes often involve using props like weighted balls, jump ropes, and beach balls to keep you moving and engaged.",
     social: [
       { icon: FaInstagramSquare, link: "https://instagram.com" },
       { icon: FaFacebookSquare, link: "https://facebook.com" },
