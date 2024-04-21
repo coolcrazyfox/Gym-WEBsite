@@ -48,6 +48,7 @@ const trainerInitData = [
       { icon: FaInstagramSquare, link: "https://instagram.com" },
       { icon: FaFacebookSquare, link: "https://facebook.com" },
       { icon: FaTwitterSquare, link: "https://twitter.com" },
+      { icon: FaYoutube, link: "https://youtube.com" },
     ],
   },
   {
@@ -60,6 +61,7 @@ const trainerInitData = [
       { icon: FaInstagramSquare, link: "https://instagram.com" },
       { icon: FaFacebookSquare, link: "https://facebook.com" },
       { icon: FaTwitterSquare, link: "https://twitter.com" },
+      { icon: FaYoutube, link: "https://youtube.com" },
     ],
   },
 ];
