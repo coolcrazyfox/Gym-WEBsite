@@ -67,7 +67,7 @@ const Team = () => {
   return (
     <section className="py- xl:h-[110vh] " id="team">
       <div className="container mx-auto  h-full flex flex-col items-center justify-center">
-        <h2>Our trainers</h2>
+        <h2 className="h2 text-center mb-6">Our trainers</h2>
         <div className=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12 mb-12">
           {trainerInitData.map((trainer, index) => {
             return (
@@ -75,7 +75,20 @@ const Team = () => {
                 <div className="relative w-[320px] h-[360px] mx-auto mb-4">
                   <Image src={trainer.avatar} fill alt="" />
                 </div>
-                {/* <p> {trainer.name}</p> */}
+                <h4> {trainer.name}</h4>
+                <p>{trainer.role}</p>
+                <p>{trainer.description}</p>
+                <div>
+                  {trainer.social.map((s, i) => {
+                    return (
+                      <div key={i}>
+                        <Link href={s.link}>
+                          <s.icon className="text-lg" />
+                        </Link>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             );
           })}
