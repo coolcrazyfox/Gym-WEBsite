@@ -83,7 +83,7 @@ const Team = () => {
                 <p className="uppercase text-xs tracking-[3px] mb-2 text-accent">
                   {trainer.role}
                 </p>
-                <p className="mb-6 max-w-[320px] mx-auto">
+                <p className="mb-6 max-w-[320px] mx-auto min-h-[250px] border border-red-800">
                   {trainer.description}
                 </p>
                 <div className="flex gap-12 justify-center">
