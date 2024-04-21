@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/variants";
 import {
-  FaInstagram,
+  FaInstagramSquare,
   FaFacebookSquare,
   FaTwitterSquare,
   FaYoutube,
@@ -20,7 +20,7 @@ const trainerInitData = [
     description:
       "Cameron Nichol is recognized for his expertise in rowing as a former Olympic rower and the founder of RowingWOD, where he utilizes his experience to enhance the rowing performance of CrossFit athletes. His approach to integrating rowing with CrossFit is designed to improve overall fitness and athletic ability.",
     social: [
-      { icon: FaInstagram, link: "https://instagram.com" },
+      { icon: FaInstagramSquare, link: "https://instagram.com" },
       { icon: FaFacebookSquare, link: "https://facebook.com" },
       { icon: FaTwitterSquare, link: "https://twitter.com" },
     ],
@@ -32,7 +32,7 @@ const trainerInitData = [
     description:
       "Cameron Nichol is recognized for his expertise in rowing as a former Olympic rower and the founder of RowingWOD, where he utilizes his experience to enhance the rowing performance of CrossFit athletes. His approach to integrating rowing with CrossFit is designed to improve overall fitness and athletic ability.",
     social: [
-      { icon: FaInstagram, link: "https://instagram.com" },
+      { icon: FaInstagramSquare, link: "https://instagram.com" },
       { icon: FaFacebookSquare, link: "https://facebook.com" },
       { icon: FaTwitterSquare, link: "https://twitter.com" },
     ],
@@ -44,7 +44,7 @@ const trainerInitData = [
     description:
       "Cameron Nichol is recognized for his expertise in rowing as a former Olympic rower and the founder of RowingWOD, where he utilizes his experience to enhance the rowing performance of CrossFit athletes. His approach to integrating rowing with CrossFit is designed to improve overall fitness and athletic ability.",
     social: [
-      { icon: FaInstagram, link: "https://instagram.com" },
+      { icon: FaInstagramSquare, link: "https://instagram.com" },
       { icon: FaFacebookSquare, link: "https://facebook.com" },
       { icon: FaTwitterSquare, link: "https://twitter.com" },
     ],
@@ -56,7 +56,7 @@ const trainerInitData = [
     description:
       "Cameron Nichol is recognized for his expertise in rowing as a former Olympic rower and the founder of RowingWOD, where he utilizes his experience to enhance the rowing performance of CrossFit athletes. His approach to integrating rowing with CrossFit is designed to improve overall fitness and athletic ability.",
     social: [
-      { icon: FaInstagram, link: "https://instagram.com" },
+      { icon: FaInstagramSquare, link: "https://instagram.com" },
       { icon: FaFacebookSquare, link: "https://facebook.com" },
       { icon: FaTwitterSquare, link: "https://twitter.com" },
     ],
@@ -82,7 +82,7 @@ const Team = () => {
                   {trainer.social.map((s, i) => {
                     return (
                       <div key={i}>
-                        <Link href={s.link}>
+                        <Link href={s.link} className="hover:text-accent">
                           <s.icon className="text-lg" />
                         </Link>
                       </div>
