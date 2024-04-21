@@ -96,7 +96,7 @@ const Team = () => {
                   <Image src={trainer.avatar} fill alt="" />
                 </div>
                 <h4 className="h4 mb-2"> {trainer.name}</h4>
-                <p className="uppercase text-xs tracking-[3px] mb-2 text-accent">
+                <p className="uppercase text-xm tracking-[3px] mb-2 text-accent ">
                   {trainer.role}
                 </p>
                 <p className="mb-6 max-w-[320px] mx-auto md:min-h-[230px]  lg:min-h-[250px] ">
@@ -121,7 +121,7 @@ const Team = () => {
           })}
         </motion.div>
         <motion.div
-          variants={fadeIn("up", 0.8)}
+          variants={fadeIn("up", 0.6)}
           initial={"hidden"}
           whileInView={"show"}
           viewport={{ once: false, amount: 0.2 }}
