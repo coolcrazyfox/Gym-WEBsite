@@ -71,12 +71,15 @@ const Team = () => {
         <div className=" grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12 mb-12">
           {trainerInitData.map((trainer, index) => {
             return (
-              <div key={index}>
+              <div
+                key={index}
+                className="flex flex-col items-center text-center"
+              >
                 <div className="relative w-[320px] h-[360px] mx-auto mb-4">
                   <Image src={trainer.avatar} fill alt="" />
                 </div>
                 <h4 className="h4 mb-2"> {trainer.name}</h4>
-                <p className="uppercase text-xs tracking-[3px]mb-2">
+                <p className="uppercase text-xs tracking-[3px] mb-2 text-accent">
                   {trainer.role}
                 </p>
                 <p className="mb-6">{trainer.description}</p>
