@@ -25,12 +25,13 @@ const trainerInitData = [
       { icon: FaTwitterSquare, link: "https://twitter.com" },
     ],
   },
+
   {
-    avatar: "/assets/img/trainers/rosy.jpg",
-    name: "Rosy",
-    role: " CardioFitness coach",
+    avatar: "/assets/img/trainers/david.jpg",
+    name: "David Williams",
+    role: " BodyBuilder coach",
     description:
-      "Cameron Nichol is recognized for his expertise in rowing as a former Olympic rower and the founder of RowingWOD, where he utilizes his experience to enhance the rowing performance of CrossFit athletes. His approach to integrating rowing with CrossFit is designed to improve overall fitness and athletic ability.",
+      "Monster of the bodybuilding profession David is an English former professional bodybuilder, and he is known for high-intensity training, and massive size, shredded glutes, and hamstrings. ",
     social: [
       { icon: FaInstagramSquare, link: "https://instagram.com" },
       { icon: FaFacebookSquare, link: "https://facebook.com" },
@@ -38,11 +39,11 @@ const trainerInitData = [
     ],
   },
   {
-    avatar: "/assets/img/trainers/david.jpg",
-    name: "David Williams",
-    role: " BodyBuilder coach",
+    avatar: "/assets/img/trainers/rosy.jpg",
+    name: "Rosy Clark",
+    role: " CardioFitness coach",
     description:
-      "Monster of the bodybuilding profession David is an English former professional bodybuilder, and he is known for high-intensity training, and massive size, shredded glutes, and hamstrings. ",
+      "Rosy Clark is a certified personal trainer and fitness nutrition specialist with nearly 10 years of experience training clients to reach their fitness goals. She created the QUEENTEAM workout program to include online workouts that people will enjoy doing.",
     social: [
       { icon: FaInstagramSquare, link: "https://instagram.com" },
       { icon: FaFacebookSquare, link: "https://facebook.com" },
