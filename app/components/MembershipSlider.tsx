@@ -53,12 +53,19 @@ const initMembershipData = [
 const MembershipSlider = () => {
   return (
     <Swiper>
-      <SwiperSlide>
-        1<SuperButton text="1" containerStyles="" />
-      </SwiperSlide>
-      <SwiperSlide>
-        1<SuperButton text="1" containerStyles="" />
-      </SwiperSlide>
+      {initMembershipData.map((m, index) => {
+        return (
+          <SwiperSlide key={index}>
+            <div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+              soluta iure, fugit incidunt molestias, nulla voluptates temporibus
+              totam optio beatae quis, quo molestiae? Earum delectus rem ab
+              eveniet nulla obcaecati!
+            </div>
+          </SwiperSlide>
+        );
+      })}
+      1<SuperButton text="1" containerStyles="" />
     </Swiper>
   );
 };
