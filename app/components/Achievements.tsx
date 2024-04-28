@@ -6,10 +6,10 @@ import { FaUsers, FaClock, FaTrophy, FaBriefcase } from "react-icons/fa";
 import { fadeIn } from "@/lib/variants";
 
 const initialStats = [
-  { count: 250, icon: FaUsers, name: "training happy clients" },
+  { count: 250, icon: FaUsers, name: "happy clients" },
   { count: 1577, icon: FaClock, name: "working hours" },
   { count: 25, icon: FaBriefcase, name: "training courses" },
-  { count: 19, icon: FaTrophy, name: "international awards" },
+  { count: 19, icon: FaTrophy, name: "awards" },
 ];
 
 const Achievements = () => {
