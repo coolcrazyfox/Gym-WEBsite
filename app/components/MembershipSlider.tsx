@@ -69,7 +69,7 @@ const MembershipSlider = () => {
           </SwiperSlide>
         );
       })}
-      <SuperButton text="1" containerStyles="w-[80px] h-[20px]" />
+      <SuperButton text="link" containerStyles="w-[80px] h-[30px] m-1 p-1" />
     </Swiper>
   );
 };
