@@ -52,7 +52,11 @@ const initMembershipData = [
 
 const MembershipSlider = () => {
   return (
-    <Swiper>
+    <Swiper
+      slidesPerView={1}
+      modules={[Pagination]}
+      pagination={{ clickable: true }}
+    >
       {initMembershipData.map((m, index) => {
         return (
           <SwiperSlide key={index}>
