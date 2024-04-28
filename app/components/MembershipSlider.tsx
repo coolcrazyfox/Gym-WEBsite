@@ -66,10 +66,13 @@ const MembershipSlider = () => {
               totam optio beatae quis, quo molestiae? Earum delectus rem ab
               eveniet nulla obcaecati!
             </div>
+            <SuperButton
+              text={m.title}
+              containerStyles="min-w-[80px] h-[30px] m-1 p-1"
+            />
           </SwiperSlide>
         );
       })}
-      <SuperButton text="link" containerStyles="w-[80px] h-[30px] m-1 p-1" />
     </Swiper>
   );
 };
