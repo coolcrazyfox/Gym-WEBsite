@@ -2,12 +2,12 @@
 import React from "react";
 import SuperButton from "./SuperButton";
 import Image from "next/image";
+import { FaClosedCaptioning, FaCheck } from "react-icons/fa6";
 
 const MembershipSlider = () => {
   return (
     <div>
-      {" "}
-      MembershipSlider <SuperButton text="" containerStyles="" />
+      <SuperButton text="" containerStyles="" />
     </div>
   );
 };
