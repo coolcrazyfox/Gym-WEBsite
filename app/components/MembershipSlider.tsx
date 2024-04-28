@@ -8,11 +8,32 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { FaClosedCaptioning, FaCheck } from "react-icons/fa6";
 
+const initMembershipData = [
+  {
+    title: "Standart",
+    price: "30",
+    benefits: [
+      { icon: FaClosedCaptioning, name: "Includes membership" },
+      { icon: FaCheck, name: "Access to all GYM facilities" },
+      { icon: FaClosedCaptioning, name: "Diet plan included" },
+      { icon: FaCheck, name: "health and fitness tips" },
+      { icon: FaCheck, name: "health and fitness tips" },
+      { icon: FaCheck, name: "health and fitness tips" },
+      { icon: FaCheck, name: "health and fitness tips" },
+    ],
+  },
+];
+
 const MembershipSlider = () => {
   return (
-    <div>
-      <SuperButton text="" containerStyles="" />
-    </div>
+    <Swiper>
+      <SwiperSlide>
+        1<SuperButton text="1" containerStyles="" />
+      </SwiperSlide>
+      <SwiperSlide>
+        1<SuperButton text="1" containerStyles="" />
+      </SwiperSlide>
+    </Swiper>
   );
 };
 
