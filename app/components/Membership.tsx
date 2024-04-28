@@ -10,12 +10,26 @@ const Membership = () => {
       className="bg-membership  bg-cover bg-center relative py-8 xl:py-0 lg:h-[95vh] "
       id="prices"
     >
-      <div className="container mx-auto text-accent h-full flex flex-col xl:pt-24 relative z-20 px-0">
-        <h2 className="h2 text-center text-white mb-8">Membership</h2>
+      <motion.div
+        variants={fadeIn("up", 0.4)}
+        initial={"hidden"}
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.2 }}
+        className="container mx-auto text-white h-full flex flex-col xl:pt-24 relative z-20 px-0"
+      >
+        <motion.h2
+          variants={fadeIn("up", 0.6)}
+          initial={"hidden"}
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="h2 text-center text-accent mb-8"
+        >
+          Membership
+        </motion.h2>
         <div>
           <MembershipSlider />
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
