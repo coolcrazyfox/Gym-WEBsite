@@ -6,8 +6,11 @@ import MembershipSlider from "./MembershipSlider";
 
 const Membership = () => {
   return (
-    <section className="h-screen bg-blue-400" id="prices">
-      <div className="container mx-auto">
+    <section
+      className="bg-membership  bg-cover bg-center relative py-8 xl:py-0 lg:h-[95vh] "
+      id="prices"
+    >
+      <div className="container mx-auto text-accent h-full flex flex-col xl:pt-24 relative z-20 px-0">
         <h2>Membership</h2>
         <div>
           <MembershipSlider />
