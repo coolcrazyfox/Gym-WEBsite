@@ -11,7 +11,7 @@ const Membership = () => {
       id="prices"
     >
       <div className="container mx-auto text-accent h-full flex flex-col xl:pt-24 relative z-20 px-0">
-        <h2 className="h2 text-center text-whitemb-8">Membership</h2>
+        <h2 className="h2 text-center text-white mb-8">Membership</h2>
         <div>
           <MembershipSlider />
         </div>
