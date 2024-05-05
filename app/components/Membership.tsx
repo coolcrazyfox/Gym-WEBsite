@@ -6,7 +6,11 @@ import MembershipSlider from "./MembershipSlider";
 
 const Membership = () => {
   return (
-    <section
+    <motion.section
+      variants={fadeIn("up", 0.2)}
+      initial={"hidden"}
+      whileInView={"show"}
+      viewport={{ once: false, amount: 0.2 }}
       className="bg-membership  bg-cover bg-center relative py-8 xl:py-0 lg:h-[95vh] before:w-full before:h-full before:absolute before:bg-black/50 before:top-0 before:z-10 "
       id="prices"
     >
@@ -30,7 +34,7 @@ const Membership = () => {
           <MembershipSlider />
         </div>
       </motion.div>
-    </section>
+    </motion.section>
   );
 };
 
