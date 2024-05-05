@@ -31,9 +31,9 @@ const initMembershipData = [
       { icon: FaCheck, name: "Access to all GYM facilities" },
       { icon: FaCheck, name: "Diet plan included" },
       { icon: FaCheck, name: "health and fitness tips" },
-      { icon: FaClosedCaptioning, name: "Monday -- Friday GYM access " },
+      { icon: FaRegWindowClose, name: "Monday -- Friday GYM access " },
       { icon: FaCheck, name: "Full access to everything" },
-      { icon: FaClosedCaptioning, name: "No additional amenities" },
+      { icon: FaRegWindowClose, name: "No additional amenities" },
     ],
   },
   {
@@ -74,7 +74,7 @@ const MembershipSlider = () => {
                 <ul className="flex flex-col gap-5 mb-7">
                   {m.benefits.map((item, index) => {
                     return (
-                      <li key={index}>
+                      <li key={index} className="flex items-center gap-2">
                         {" "}
                         <item.icon className="text-accent text-lg" />
                         {item.name}
