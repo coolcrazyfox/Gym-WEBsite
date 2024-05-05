@@ -82,13 +82,17 @@ const MembershipSlider = () => {
                     );
                   })}
                 </ul>
+                <p className="text-white mb-8 flex gap-1 items-center">
+                  <span className="text-6xl ">$</span>
+                  <span className="text-6xl text-accent">{m.price}</span>
+                  <em className="self-end text-4xl ">/month</em>
+                </p>
+                <SuperButton
+                  text={"Buy now"}
+                  containerStyles="min-w-[80px] h-[30px] m-1 p-1"
+                />
               </div>
             </div>
-
-            <SuperButton
-              text={m.title}
-              containerStyles="min-w-[80px] h-[30px] m-1 p-1"
-            />
           </SwiperSlide>
         );
       })}
