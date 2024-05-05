@@ -60,6 +60,7 @@ const MembershipSlider = () => {
         768: { slidesPerView: 2, spaceBetween: 30 },
         1024: { slidesPerView: 3, spaceBetween: 30 },
       }}
+      className="min-h-[680px]"
     >
       {initMembershipData.map((m, index) => {
         return (
