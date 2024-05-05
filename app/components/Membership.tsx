@@ -22,7 +22,7 @@ const Membership = () => {
         className="container mx-auto text-white h-full flex flex-col xl:pt-24 relative z-20 px-0"
       >
         <motion.h2
-          variants={fadeIn("up", 0.6)}
+          variants={fadeIn("up", 0.2)}
           initial={"hidden"}
           whileInView={"show"}
           viewport={{ once: false, amount: 0.2 }}
@@ -30,9 +30,14 @@ const Membership = () => {
         >
           Membership
         </motion.h2>
-        <div>
+        <motion.div
+          variants={fadeIn("up", 0.6)}
+          initial={"hidden"}
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+        >
           <MembershipSlider />
-        </div>
+        </motion.div>
       </motion.div>
     </motion.section>
   );
