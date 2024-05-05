@@ -66,7 +66,7 @@ const MembershipSlider = () => {
         return (
           <SwiperSlide key={index}>
             <div className="border border-accent hover:bg-primary-300/80 transition-all duration-300 w-full max-w-sm xl:max-w-none mx-auto">
-              <div className="mx-2">
+              <div className="py-5 px-[60px] border border-accent">
                 <h4 className="h4">{m.title}</h4>
               </div>
               <div>
