@@ -10,8 +10,8 @@ import { FaClosedCaptioning, FaCheck } from "react-icons/fa6";
 
 const initMembershipData = [
   {
-    title: "Standart",
-    price: "40",
+    title: "Gold",
+    price: "199",
     benefits: [
       { icon: FaCheck, name: "Includes membership" },
       { icon: FaCheck, name: "Access to all GYM facilities" },
@@ -23,8 +23,8 @@ const initMembershipData = [
     ],
   },
   {
-    title: "Premium",
-    price: "100",
+    title: "Platinum",
+    price: "499",
     benefits: [
       { icon: FaCheck, name: "Includes membership" },
       { icon: FaCheck, name: "Access to all GYM facilities" },
@@ -37,7 +37,7 @@ const initMembershipData = [
   },
   {
     title: "Unlimited",
-    price: "250",
+    price: "1199",
     benefits: [
       { icon: FaCheck, name: "Includes membership" },
       { icon: FaCheck, name: "Access to all GYM facilities" },
@@ -71,6 +71,10 @@ const MembershipSlider = () => {
               totam optio beatae quis, quo molestiae? Earum delectus rem ab
               eveniet nulla obcaecati!
             </div>
+            <span className="flex flex-row px-2 border bg-grey-300 w-[100px] bg-slate-500 bg-opacity-5 border-accent rounded-sm">
+              $ <div className="mx-2">{m.price}</div>
+            </span>
+
             <SuperButton
               text={m.title}
               containerStyles="min-w-[80px] h-[30px] m-1 p-1"
