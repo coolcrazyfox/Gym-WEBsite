@@ -56,6 +56,7 @@ const MembershipSlider = () => {
       slidesPerView={1}
       modules={[Pagination]}
       pagination={{ clickable: true }}
+      breakpoints={{ 768: { slidesPerView: 2, spaceBetween: 30 } }}
     >
       {initMembershipData.map((m, index) => {
         return (
