@@ -6,7 +6,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import { FaClosedCaptioning, FaCheck } from "react-icons/fa6";
+import { FaCheck } from "react-icons/fa6";
+import { FaRegWindowClose } from "react-icons/fa";
 
 const initMembershipData = [
   {
@@ -15,11 +16,11 @@ const initMembershipData = [
     benefits: [
       { icon: FaCheck, name: "Includes membership" },
       { icon: FaCheck, name: "Access to all GYM facilities" },
-      { icon: FaClosedCaptioning, name: "Diet plan included" },
+      { icon: FaRegWindowClose, name: "Diet plan included" },
       { icon: FaCheck, name: "health and fitness tips" },
-      { icon: FaClosedCaptioning, name: "Monday -- Friday GYM access " },
+      { icon: FaRegWindowClose, name: "Monday -- Friday GYM access " },
       { icon: FaCheck, name: "Full access to everything" },
-      { icon: FaClosedCaptioning, name: "No additional amenities" },
+      { icon: FaRegWindowClose, name: "No additional amenities" },
     ],
   },
   {
@@ -69,10 +70,16 @@ const MembershipSlider = () => {
               <div className="py-5 px-[60px] border border-accent">
                 <h4 className="h4">{m.title}</h4>
               </div>
-              <div>
-                <ul>
+              <div className="py-[30px] px-[60px]">
+                <ul className="flex flex-col gap-5 mb-7">
                   {m.benefits.map((item, index) => {
-                    return <li key={index}>{item.name}</li>;
+                    return (
+                      <li key={index}>
+                        {" "}
+                        <item.icon className="text-accent text-lg" />
+                        {item.name}
+                      </li>
+                    );
                   })}
                 </ul>
               </div>
