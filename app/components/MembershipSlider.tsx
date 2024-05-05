@@ -89,7 +89,7 @@ const MembershipSlider = () => {
                 </p>
                 <SuperButton
                   text={"Buy now"}
-                  containerStyles="min-w-[80px] h-[30px] m-1 p-1"
+                  containerStyles="w-[196px] h-[62px]"
                 />
               </div>
             </div>
