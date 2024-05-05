@@ -7,7 +7,7 @@ import MembershipSlider from "./MembershipSlider";
 const Membership = () => {
   return (
     <section
-      className="bg-membership  bg-cover bg-center relative py-8 xl:py-0 lg:h-[95vh] "
+      className="bg-membership  bg-cover bg-center relative py-8 xl:py-0 lg:h-[95vh] before:w-full before:h-full before:absolute before:bg-black/50 before:top-0 before:z-10 "
       id="prices"
     >
       <motion.div

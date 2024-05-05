@@ -66,14 +66,17 @@ const MembershipSlider = () => {
         return (
           <SwiperSlide key={index}>
             <div className="border border-accent hover:bg-primary-300/80 transition-all duration-300 w-full max-w-sm xl:max-w-none mx-auto">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-              soluta iure, fugit incidunt molestias, nulla voluptates temporibus
-              totam optio beatae quis, quo molestiae? Earum delectus rem ab
-              eveniet nulla obcaecati!
+              <div className="mx-2">
+                <h4 className="h4">{m.title}</h4>
+              </div>
+              <div>
+                <ul>
+                  {m.benefits.map((item, index) => {
+                    return <li key={index}>{item.name}</li>;
+                  })}
+                </ul>
+              </div>
             </div>
-            <span className="flex flex-row px-2 border bg-primary-300/80 w-[100px] bg-slate-500  border-accent rounded-sm">
-              $ <div className="mx-2">{m.price}</div>
-            </span>
 
             <SuperButton
               text={m.title}
