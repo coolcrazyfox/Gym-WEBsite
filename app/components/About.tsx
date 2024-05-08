@@ -49,6 +49,9 @@ const About = () => {
           >
             We aim to inspire individuals to prioritize their health and to show
             them that a fit body is a key component of a healthy life.
+            {/* Our
+            experienced trainers will work with you to create a personalized
+            workout plan that fits your schedule, fitness level and objectives. */}
           </motion.p>
         </div>
         <motion.div

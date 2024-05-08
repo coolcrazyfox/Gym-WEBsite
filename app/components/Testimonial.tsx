@@ -1,8 +1,10 @@
-import React from "react";
+"use client";
+import Image from "next/image";
+import { FaQuoteLeft } from "react-icons/fa";
 
 const Testimonial = () => {
   return (
-    <section className="h-[50vh] bg-indigo-200" id="testimonial">
+    <section className="" id="testimonial">
       Testimonial
     </section>
   );
