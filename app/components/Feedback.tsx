@@ -12,32 +12,44 @@ const feedbackData = [
   {
     avatar: "/assets/img/feedback/sean.jpg",
     name: "Sean Chun",
-    comment: "text",
+    date: "Mai 2024",
+    comment:
+      "This experience was amazing, I’m glad to have to have gone here because the classes were fulfilling, the location was beautiful and everything A-Z lived up to my ecxpectations.",
   },
   {
     avatar: "/assets/img/feedback/alex.jpg",
     name: "Alex Shmeit",
-    comment: "text",
+    date: "Apl 2024",
+    comment:
+      "One of the best Pilates studio on London. I enjoy every session and see the results straight away. This not an easy workout!!",
   },
   {
     avatar: "/assets/img/feedback/chack.jpg",
     name: "Chack Damandrabot",
-    comment: "text",
+    date: "Feb 2024",
+    comment:
+      "The toughest Pilates class you will ever do! Tones muscles immediately and gives you that super lean look. Literally hooked.",
   },
   {
     avatar: "/assets/img/feedback/andrea.jpg",
     name: "Lee Sean",
-    comment: "text",
+    date: "Nov 2023",
+    comment:
+      "Great studio, haven’t seen anything similar in London. All of the instructors are amazing - highly recommend!",
   },
   {
     avatar: "/assets/img/feedback/leesean.jpg",
     name: "Andrea Cheanotte",
-    comment: "text",
+    date: "Aug 2023",
+    comment:
+      "Excellent work out! Really good for building relief, lean muscles and developing great mobility.The space itself cozy and clean and they make great coffee.",
   },
   {
     avatar: "/assets/img/feedback/clark.jpg",
     name: "Clark Gandert",
-    comment: "text",
+    date: "Nov 2023",
+    comment:
+      "Love this class! You can see results immediately. It’s intense, but so rewarding. The studio is also stylish and cozy, great location.",
   },
 ];
 
@@ -60,7 +72,11 @@ const Feedback = () => {
                       className="border-2 border-accent rounded-full"
                     />
                   </div>
-                  {f.name}
+                  <div className="flex flex-col justify-center items-center">
+                    <FaQuoteLeft className="text-2xl text-gray-400 " />
+                    <p className="mx-w-[300px] mb-4">{f.comment}</p>
+                    <span className="text-2xl text-accent">{f.name}</span>
+                  </div>
                 </SwiperSlide>
               );
             })}
