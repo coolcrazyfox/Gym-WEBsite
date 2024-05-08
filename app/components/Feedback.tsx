@@ -11,7 +11,7 @@ import { FaQuoteLeft } from "react-icons/fa";
 const feedbackData = [
   {
     avatar: "/assets/img/feedback/sean.jpg",
-    name: "Lee Sean",
+    name: "Sean Chun",
     comment: "text",
   },
   {
