@@ -59,17 +59,17 @@ const Feedback = () => {
       <div className="container mx-auto">
         <h2 className="h2 text-center">Our References</h2>
         <div className="">
-          <Swiper>
+          <Swiper className="h-[320px]">
             {feedbackData.map((f, index) => {
               return (
                 <SwiperSlide key={index} className="h-full">
-                  <div className="">
+                  <div className="flex flex-col justify-center items-center gap-6 text-center h-full">
                     <Image
                       src={f.avatar}
                       width={90}
                       height={90}
                       alt={""}
-                      className="border-2 border-accent rounded-full"
+                      className="border-2 border-accent rounded-full mb-2"
                     />
                   </div>
                   <div className="flex flex-col justify-center items-center">
