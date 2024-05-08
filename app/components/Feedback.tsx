@@ -57,9 +57,27 @@ const Feedback = () => {
   return (
     <section className="py-12 xl:py-28" id="references">
       <div className="container mx-auto">
-        <h2 className="h2 text-center">Our References</h2>
+        <motion.h2
+          variants={fadeIn("up", 0.2)}
+          initial={"hidden"}
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="h2 text-center"
+        >
+          Our References
+        </motion.h2>
         <div className="">
-          <Swiper className="h-[320px]">
+          <Swiper
+            className=" max-h-[820px]"
+            slidesPerView={1}
+            spaceBetween={30}
+            modules={[Pagination]}
+            pagination={{ clickable: true }}
+            breakpoints={{
+              768: { slidesPerView: 2, spaceBetween: 30 },
+              1024: { slidesPerView: 3, spaceBetween: 30 },
+            }}
+          >
             {feedbackData.map((f, index) => {
               return (
                 <SwiperSlide key={index} className="h-full">
@@ -69,14 +87,16 @@ const Feedback = () => {
                       width={90}
                       height={90}
                       alt={""}
-                      className="border-2 border-accent rounded-full mb-2"
+                      className="border-2 border-accent rounded-full "
                     />
+                    <span className="text-2xl text-accent">{f.name}</span>
                   </div>
                   <div className="flex flex-col justify-center items-center">
                     <FaQuoteLeft className="text-2xl text-gray-400 " />
-                    <p className="max-w-[300px] mb-4">{f.comment}</p>
+                    <p className="max-w-[300px] min-h-[130px] mb-2 ">
+                      {f.comment}
+                    </p>
                     <p className="w-[300px] mb-2 text-left ">{f.date}</p>
-                    <span className="text-2xl text-accent">{f.name}</span>
                   </div>
                 </SwiperSlide>
               );
