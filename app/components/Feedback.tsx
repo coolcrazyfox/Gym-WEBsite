@@ -74,7 +74,8 @@ const Feedback = () => {
                   </div>
                   <div className="flex flex-col justify-center items-center">
                     <FaQuoteLeft className="text-2xl text-gray-400 " />
-                    <p className="mx-w-[300px] mb-4">{f.comment}</p>
+                    <p className="max-w-[300px] mb-4">{f.comment}</p>
+                    <p className="w-[300px] mb-2 text-left ">{f.date}</p>
                     <span className="text-2xl text-accent">{f.name}</span>
                   </div>
                 </SwiperSlide>
