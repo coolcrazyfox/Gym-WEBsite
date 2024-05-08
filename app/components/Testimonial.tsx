@@ -6,12 +6,12 @@ import "swiper/css/pagination";
 import Image from "next/image";
 import { FaQuoteLeft } from "react-icons/fa";
 
-const Testimonial = () => {
+const Feedback = () => {
   return (
     <section className="" id="testimonial">
-      Testimonial
+      Feedback
     </section>
   );
 };
 
-export default Testimonial;
+export default Feedback;
