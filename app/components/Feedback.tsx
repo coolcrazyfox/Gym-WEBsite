@@ -58,7 +58,7 @@ const Feedback = () => {
     <section className="py-12 xl:py-28" id="references">
       <div className="container mx-auto">
         <motion.h2
-          variants={fadeIn("up", 0.2)}
+          variants={fadeIn("up", 0.4)}
           initial={"hidden"}
           whileInView={"show"}
           viewport={{ once: false, amount: 0.2 }}
@@ -66,7 +66,12 @@ const Feedback = () => {
         >
           Our References
         </motion.h2>
-        <div className="">
+        <motion.div
+          variants={fadeIn("up", 0.6)}
+          initial={"hidden"}
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+        >
           <Swiper
             className=" max-h-[820px]"
             slidesPerView={1}
@@ -102,7 +107,7 @@ const Feedback = () => {
               );
             })}
           </Swiper>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
