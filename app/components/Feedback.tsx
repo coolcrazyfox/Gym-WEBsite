@@ -28,7 +28,7 @@ const feedbackData = [
 
 const Feedback = () => {
   return (
-    <section className="py-12 xl:py-28" id="testimonial">
+    <section className="py-12 xl:py-28" id="references">
       <div className="container mx-auto">
         <h2 className="h2 text-center">Our References</h2>
         <div className="">
