@@ -34,7 +34,20 @@ const Feedback = () => {
         <div className="">
           <Swiper>
             {feedbackData.map((f, index) => {
-              return <SwiperSlide key={index}>{f.name}</SwiperSlide>;
+              return (
+                <SwiperSlide key={index} className="h-full">
+                  <div className="">
+                    <Image
+                      src={f.avatar}
+                      width={90}
+                      height={90}
+                      alt={""}
+                      className="border-2 border-accent rounded-full"
+                    />
+                  </div>
+                  {f.name}
+                </SwiperSlide>
+              );
             })}
           </Swiper>
         </div>
