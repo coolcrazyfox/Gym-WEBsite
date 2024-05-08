@@ -76,10 +76,8 @@ const HeroSlider = () => {
               viewport={{ once: false, amount: 0.2 }}
               className="text-white italic text-center lg:text-left mb-4"
             >
-              GYM - YOUR NAME is a social exercise platform that allows user to
-              easily track their health progress, exercise and fitness patterns,
-              create their own programs and share them with the larger
-              community.
+              GYM - YOUR NAME is a stay fit and healthy with our custom exercise
+              routines.
             </motion.p>
             <motion.div
               variants={fadeIn("up", 0.8)}
