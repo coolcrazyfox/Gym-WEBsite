@@ -30,7 +30,14 @@ const Feedback = () => {
   return (
     <section className="py-12 xl:py-28" id="testimonial">
       <div className="container mx-auto">
-        <h2>Our References</h2>
+        <h2 className="h2 text-center">Our References</h2>
+        <div className="">
+          <Swiper>
+            {feedbackData.map((f, index) => {
+              return <SwiperSlide key={index}>{f.name}</SwiperSlide>;
+            })}
+          </Swiper>
+        </div>
       </div>
     </section>
   );
