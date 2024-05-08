@@ -10,7 +10,7 @@ import { FaQuoteLeft } from "react-icons/fa";
 
 const feedbackData = [
   {
-    avatar: "/assets/img/feedback/lisean.jpg",
+    avatar: "/assets/img/feedback/leesean.jpg",
     name: "Lee Sean",
     comment: "text",
   },
