@@ -21,12 +21,12 @@ const Header = () => {
   return (
     <header
       className={`${
-        activeHeader ? "h-[100px]" : "h-[124px] "
-      } fixed max-w-[2048px] top-0 w-full bg-primary-200 h-[100px] transition-all z-50`}
+        activeHeader ? "h-[80px]" : "h-[104px] "
+      } fixed max-w-[2048px] top-0 w-full bg-primary-200 h-[80px] transition-all z-50`}
     >
       <div className=" container h-full flex items-center justify-between mx-auto">
         <Link href={""}>
-          <Image src={"/assets/img/logo2.png"} width={117} height={55} alt="" />
+          <Image src={"/assets/img/logo2.png"} width={87} height={20} alt="" />
         </Link>
         <MobileNav
           containerStyles={`${activeHeader ? "top-[90px]" : "top-[124px] "}${
