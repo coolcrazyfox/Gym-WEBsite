@@ -5,7 +5,7 @@ import Classes from "./components/Classes";
 import Hero from "./components/Hero";
 import Membership from "./components/Membership";
 import Team from "./components/Team";
-import Testimonial from "./components/Testimonial";
+import Feedback from "./components/Feedback";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <Classes />
       <Team />
       <Membership />
-      <Testimonial />
+      <Feedback />
       <Blog />
       <Brands />
       <div className={"h-[3000px]"}></div>
