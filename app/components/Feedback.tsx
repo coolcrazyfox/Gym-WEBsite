@@ -24,6 +24,21 @@ const feedbackData = [
     name: "Clark Gandert",
     comment: "text",
   },
+  {
+    avatar: "/assets/img/feedback/andrea.jpg",
+    name: "Lee Sean",
+    comment: "text",
+  },
+  {
+    avatar: "/assets/img/feedback/leesean.jpg",
+    name: "Andrea Cheanotte",
+    comment: "text",
+  },
+  {
+    avatar: "/assets/img/feedback/clark.jpg",
+    name: "Clark Gandert",
+    comment: "text",
+  },
 ];
 
 const Feedback = () => {
