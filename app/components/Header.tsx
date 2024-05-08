@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 import MobileNav from "./MobileNav";
 import Link from "next/link";
 import Image from "next/image";
-import { MdMenu } from "react-icons/md";
+import { MdOutlineMenu } from "react-icons/md";
 
 const Header = () => {
   const [activeHeader, setActiveHeader] = useState(false);
@@ -49,7 +49,7 @@ const Header = () => {
             onClick={() => setActiveNavBa(!activeNavBar)}
             className="text-white xl:hidden"
           >
-            <MdMenu className="text-4xl" />
+            <MdOutlineMenu className="text-4xl" />
           </button>
         </div>
       </div>
