@@ -66,7 +66,20 @@ const Blog = () => {
         <div>
           <Swiper>
             {initBlogData.map((post, index) => {
-              return <SwiperSlide key={index}>{post.text}</SwiperSlide>;
+              return (
+                <SwiperSlide key={index}>
+                  <div>
+                    <Image
+                      src={post.image}
+                      alt={""}
+                      width={320}
+                      height={266}
+                      className="mb-6"
+                    />
+                  </div>
+                  {post.text}
+                </SwiperSlide>
+              );
             })}
           </Swiper>
         </div>
