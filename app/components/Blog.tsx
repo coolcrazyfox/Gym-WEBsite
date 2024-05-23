@@ -65,8 +65,8 @@ const Blog = () => {
         <h2>Blogs </h2>
         <div>
           <Swiper>
-            {initBlogData.map((blog, index) => {
-              return <div key={index}>{blog.text}</div>;
+            {initBlogData.map((post, index) => {
+              return <SwiperSlide key={index}>{post.text}</SwiperSlide>;
             })}
           </Swiper>
         </div>
