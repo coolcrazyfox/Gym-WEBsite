@@ -78,10 +78,15 @@ const Blog = () => {
                       className="mb-6"
                     />
                   </div>
-                  <div>
-                    <p>{post.date}</p>
-                    <Link href={post.link}>
-                      <h5>{post.text}</h5>
+                  <div className="flex flex-col items-start">
+                    <p className="max-w-[380px] uppercase text-[12px] mb-1 tracking-[3px]">
+                      {post.date}
+                    </p>
+                    <Link
+                      href={post.link}
+                      className="hover:text-accent transition-all duration-300"
+                    >
+                      <h5 className="h5">{post.text}</h5>
                     </Link>
                   </div>
                 </SwiperSlide>
