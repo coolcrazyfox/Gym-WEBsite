@@ -14,7 +14,7 @@ const feedbackData = [
     name: "Sean Chun",
     date: "Mai 2024",
     comment:
-      "This experience was amazing, I’m glad to have to have gone here because the classes were fulfilling, the location was beautiful and everything A-Z lived up to my ecxpectations.",
+      "This experience was amazing, I am glad to have to have gone here because the classes were fulfilling, the location was beautiful and everything A-Z lived up to my ecxpectations.",
   },
   {
     avatar: "/assets/img/feedback/alex.jpg",
@@ -35,7 +35,7 @@ const feedbackData = [
     name: "Lee Sean",
     date: "Nov 2023",
     comment:
-      "Great studio, haven’t seen anything similar in London. All of the instructors are amazing - highly recommend!",
+      "Great studio, haven not  seen anything similar in London. All of the instructors are amazing - highly recommend!",
   },
   {
     avatar: "/assets/img/feedback/leesean.jpg",
@@ -49,7 +49,7 @@ const feedbackData = [
     name: "Clark Gandert",
     date: "Nov 2023",
     comment:
-      "Love this class! You can see results immediately. It’s intense, but so rewarding. The studio is also stylish and cozy, great location.",
+      "Love this class! You can see results immediately. It is intense, but so rewarding. The studio is also stylish and cozy, great location.",
   },
 ];
 
