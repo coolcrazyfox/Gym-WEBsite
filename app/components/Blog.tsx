@@ -63,6 +63,13 @@ const Blog = () => {
     <section className=" bg-primary-300 text-white py-24" id="blog">
       <div className="container mx-auto">
         <h2>Blogs </h2>
+        <div>
+          <Swiper>
+            {initBlogData.map((blog, index) => {
+              return <div key={index}>{blog.text}</div>;
+            })}
+          </Swiper>
+        </div>
       </div>
     </section>
   );
