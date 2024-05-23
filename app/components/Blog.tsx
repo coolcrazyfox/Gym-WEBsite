@@ -62,7 +62,7 @@ const Blog = () => {
   return (
     <section className=" bg-primary-300 text-white py-24" id="blog">
       <div className="container mx-auto">
-        <h2>Blogs </h2>
+        <h2 className="h2 text-center mb-8">Blogs </h2>
         <div>
           <Swiper>
             {initBlogData.map((post, index) => {
