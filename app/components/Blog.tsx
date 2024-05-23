@@ -4,6 +4,7 @@ import { Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/variants";
 
@@ -77,7 +78,12 @@ const Blog = () => {
                       className="mb-6"
                     />
                   </div>
-                  {post.text}
+                  <div>
+                    <p>{post.date}</p>
+                    <Link href={post.link}>
+                      <h5>{post.text}</h5>
+                    </Link>
+                  </div>
                 </SwiperSlide>
               );
             })}
