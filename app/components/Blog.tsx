@@ -124,12 +124,17 @@ const Blog = () => {
             />
           </Swiper>
         </motion.div>
-        <div>
+        <motion.div
+          variants={fadeIn("up", 0.8)}
+          initial={"hidden"}
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+        >
           <SuperButton
             containerStyles="block w-[196px] h-[62px] mx-auto"
             text="read more"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

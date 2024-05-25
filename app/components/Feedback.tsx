@@ -55,14 +55,14 @@ const feedbackData = [
 
 const Feedback = () => {
   return (
-    <section className="py-12 xl:py-28 " id="references">
+    <section className="py-12 xl:py-28 h-[90vh]" id="references">
       <div className="container mx-auto">
         <motion.h2
           variants={fadeIn("up", 0.4)}
           initial={"hidden"}
           whileInView={"show"}
           viewport={{ once: false, amount: 0.2 }}
-          className="h2 text-center"
+          className="h2 text-center my-12"
         >
           Our References
         </motion.h2>
@@ -89,16 +89,16 @@ const Feedback = () => {
                   <div className="flex flex-col justify-center items-center gap-6 text-center h-full">
                     <Image
                       src={f.avatar}
-                      width={90}
-                      height={90}
+                      width={120}
+                      height={120}
                       alt={""}
                       className="border-2 border-accent rounded-full "
                     />
-                    <span className="text-2xl text-accent">{f.name}</span>
+                    <span className="text-2xl text-accent my-4">{f.name}</span>
                   </div>
                   <div className="flex flex-col justify-center items-center">
                     <FaQuoteLeft className="text-2xl text-gray-400 my-1 " />
-                    <span className="w-[300px] mb-2 text-left ">{f.date}</span>
+                    <span className="w-[300px] my-2 text-left ">{f.date}</span>
                     <p className="max-w-[300px] min-h-[180px] mb-2 ">
                       {f.comment}
                     </p>
