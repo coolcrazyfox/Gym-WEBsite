@@ -1,6 +1,6 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+
 import "swiper/css";
 import "swiper/css/pagination";
 import Image from "next/image";
@@ -13,60 +13,60 @@ import SwiperNavButtons from "./SwiperNavButtons";
 const initBlogData = [
   {
     image: "/assets/img/blog/post1.jpg",
-    date: "February 11, 2024",
-    text: "Maintain a perfect structure after workout",
+    date: "February 23, 2023",
+    text: "Maintain perfect body after workout",
     link: "",
   },
   {
     image: "/assets/img/blog/post2.jpg",
-    date: "February 11, 2024",
-    text: "Maintain a perfect structure after workout",
+    date: "May 11, 2023",
+    text: "Diet to keep the body in shape",
     link: "",
   },
   {
     image: "/assets/img/blog/post3.jpg",
-    date: "February 11, 2024",
-    text: "Maintain a perfect structure after workout",
+    date: "August 15, 2023",
+    text: "Schedule and composition of the necessary exercises to form an ideal stomach",
     link: "",
   },
   {
     image: "/assets/img/blog/post4.jpg",
-    date: "February 11, 2024",
-    text: "Maintain a perfect structure after workout",
+    date: "November 10, 2023",
+    text: "List of products for muscle building",
     link: "",
   },
   {
     image: "/assets/img/blog/post1.jpg",
-    date: "February 11, 2024",
-    text: "Maintain a perfect structure after workout",
+    date: "January 22, 2024",
+    text: "Exercises for muscle training shoulder",
     link: "",
   },
   {
     image: "/assets/img/blog/post2.jpg",
     date: "February 11, 2024",
-    text: "Maintain a perfect structure after workout",
+    text: "List of essential vitamins and minirals to strengthen muscle mass",
     link: "",
   },
   {
     image: "/assets/img/blog/post3.jpg",
-    date: "February 11, 2024",
-    text: "Maintain a perfect structure after workout",
+    date: "April 29, 2024",
+    text: "Exercises for training leg muscles",
     link: "",
   },
   {
     image: "/assets/img/blog/post4.jpg",
-    date: "February 11, 2024",
-    text: "Maintain a perfect structure after workout",
+    date: "May 17, 2024",
+    text: "Exercises for training back muscles",
     link: "",
   },
 ];
 
 const Blog = () => {
   return (
-    <section className=" bg-primary-300 text-white py-24" id="blog">
+    <section className=" bg-primary-300 text-white py-24 h-full" id="blog">
       <div className="container mx-auto">
         <h2 className="h2 text-center mb-8">Blogs </h2>
-        <div className="border">
+        <div className="">
           <Swiper
             className="h-[420px] md:max-w-[660px] lg:max-w-none mb-8"
             slidesPerView={1}
@@ -88,17 +88,17 @@ const Blog = () => {
                       height={266}
                       className="mb-6"
                     />
-                  </div>
-                  <div className="flex flex-col items-start">
-                    <p className="max-w-[380px] uppercase text-[12px] mb-1 tracking-[3px]">
-                      {post.date}
-                    </p>
-                    <Link
-                      href={post.link}
-                      className="hover:text-accent transition-all duration-300"
-                    >
-                      <h5 className="h5">{post.text}</h5>
-                    </Link>
+                    <div className="flex flex-col items-start">
+                      <p className="max-w-[380px] uppercase text-[12px] mb-1 tracking-[3px]">
+                        {post.date}
+                      </p>
+                      <Link
+                        href={post.link}
+                        className="hover:text-accent transition-all duration-300"
+                      >
+                        <h5 className="h5">{post.text}</h5>
+                      </Link>
+                    </div>
                   </div>
                 </SwiperSlide>
               );
