@@ -15,7 +15,7 @@ const initBrands = [
 
 const Brands = () => {
   return (
-    <section className=" h-[400px] " id="contact">
+    <section className="h-[400px] bg-gray-400" id="contact">
       <div className="container mx-auto  ">
         <div className="border border-red-600">
           {initBrands.map((brand, index) => {
@@ -27,7 +27,7 @@ const Brands = () => {
                     width={204}
                     height={106}
                     alt=""
-                    className="opacity-50 group-hover:opacity-100 transition-all mx-auto"
+                    className="opacity-50 group-hover:opacity-100 transition-all mx-auto border border-blue-400"
                   />
                 </Link>
               </div>

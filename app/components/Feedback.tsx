@@ -55,7 +55,7 @@ const feedbackData = [
 
 const Feedback = () => {
   return (
-    <section className="py-12 xl:py-28 " id="references">
+    <section className="py-12 xl:py-28 bg-red-200" id="references">
       <div className="container mx-auto">
         <motion.h2
           variants={fadeIn("up", 0.4)}
