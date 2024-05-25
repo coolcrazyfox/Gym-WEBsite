@@ -28,15 +28,35 @@ const Footer = () => {
             </Link>
             <p className="max-w-sm">text</p>
             <ul className="flex flex-col gap-4">
-              <li>
+              <li className="flex items-center gap-4">
                 <FaMapMarkerAlt className="text-xl text-accent" />
                 <span>Lincoln Park Chicago, Illions</span>
               </li>
+              <li className="flex items-center gap-4">
+                <FaPhoneAlt className="text-xl text-accent" />
+                <span>(510) 710-3464 (510) 710-3466</span>
+              </li>
+              <li>
+                <Link href="#" className="flex items-center gap-4">
+                  <FaEnvelope className="text-xl text-accent" />
+                  <span>gymyourname@gmail.com</span>
+                </Link>
+              </li>
             </ul>
           </div>
-          <div className="bg-red-300/20">blog</div>
-          <div className="bg-red-300/20">gallery</div>
-          <div className="bg-red-300/20">newsletter</div>
+          <div className="">
+            <h4 className="h4 text-accent mb-4">Recent blog post</h4>
+            <div>
+              <Link href="#" className="hover:text-accent transition-all">
+                <h5 className="h5 leading-snug">
+                  How to stay motivated for all exercises
+                </h5>
+                <p className="text-gray-400 text-[12px] tracking-[3px] uppercase">
+                  September 10, 2024
+                </p>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
       <SuperButton containerStyles="" text="" />
