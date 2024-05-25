@@ -65,8 +65,22 @@ const Blog = () => {
   return (
     <section className=" bg-primary-300 text-white py-24 h-full" id="blog">
       <div className="container mx-auto">
-        <h2 className="h2 text-center mb-8">Blogs </h2>
-        <div className="">
+        <motion.h2
+          variants={fadeIn("up", 0.4)}
+          initial={"hidden"}
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="h2 text-center mb-8"
+        >
+          Blogs
+        </motion.h2>
+        <motion.div
+          variants={fadeIn("up", 0.6)}
+          initial={"hidden"}
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className=""
+        >
           <Swiper
             className="h-[420px] md:max-w-[660px] lg:max-w-none mb-8"
             slidesPerView={1}
@@ -109,7 +123,7 @@ const Blog = () => {
               iconStyles=" text-2xl"
             />
           </Swiper>
-        </div>
+        </motion.div>
         <div>
           <SuperButton
             containerStyles="block w-[196px] h-[62px] mx-auto"
