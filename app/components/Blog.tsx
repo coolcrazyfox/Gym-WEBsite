@@ -70,7 +70,7 @@ const Blog = () => {
           <Swiper
             className="h-[420px] md:max-w-[660px] lg:max-w-none mb-8"
             slidesPerView={1}
-            spaceBetween={15}
+            spaceBetween={30}
             breakpoints={{
               768: { slidesPerView: 2, spaceBetween: 15 },
               1024: { slidesPerView: 3 },
@@ -104,7 +104,7 @@ const Blog = () => {
               );
             })}
             <SwiperNavButtons
-              containerStyles="flex justify-between gap-1 absolute left-0 right-0 bottom-[16rem] w-full max-w-[380px] sm:max-w-[620px] md:max-w-[960px] xl:max-w-[1320px] mx-auto z-50 "
+              containerStyles="flex justify-between gap-1 absolute left-0 right-0 bottom-[16rem] w-full max-w-[370px] sm:max-w-[620px] md:max-w-[960px] xl:max-w-[1320px] mx-auto z-50 "
               btnStyles="bg-primary-400 text-accent w-[50px] h-[50px] flex justify-center items-center  hover:bg-gray-100 transition-all duration-300"
               iconStyles=" text-2xl"
             />
