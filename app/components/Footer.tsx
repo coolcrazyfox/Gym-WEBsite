@@ -6,9 +6,9 @@ import {
   FaMapMarkerAlt,
   FaEnvelope,
   FaPhoneAlt,
-  FaFacebook,
+  FaLinkedinIn,
   FaTelegram,
-  FaTwitter,
+  FaGithub,
 } from "react-icons/fa";
 import SuperButton from "./SuperButton";
 
@@ -21,12 +21,17 @@ const initTrainer = [
   { name: "bill", link: "/assets/img/trainers/bill.jpg" },
   { name: "bob", link: "/assets/img/trainers/bob.jpg" },
 ];
+const initContact = [
+  { name: "telegram", src: "", img: <FaTelegram /> },
+  { name: "linkedin", src: "", img: <FaLinkedinIn /> },
+  { name: "github", src: "", img: <FaGithub /> },
+];
 
 const Footer = () => {
   return (
     <footer className="bg-primary-300 pt-24">
       <div className="container mx-auto pb-24">
-        <div className="text-white grid grid-cols-1 xl:grid-cols-4 gap-x-8 gap-y-12">
+        <motion.div className="text-white grid grid-cols-1 xl:grid-cols-4 gap-x-8 gap-y-12">
           <div className="flex flex-col gap-4">
             <Link href="#">
               <Image
@@ -118,12 +123,26 @@ const Footer = () => {
               </form>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
       <div className="text-white border-t border-white/20 py-12">
         <div className="container mx-auto h-full">
-          <div>
+          <div className="flex items-center justify-between h-full">
             <span>&copy; Malets Andrei 2024</span>
+            <ul className="flex gap-4 text-xl">
+              {initContact.map((contact, index) => {
+                return (
+                  <li>
+                    <Link
+                      className="text-white hover:text-accent transition-all "
+                      href={contact.src}
+                    >
+                      {contact.img}
+                    </Link>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
         </div>
       </div>
