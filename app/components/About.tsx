@@ -28,7 +28,7 @@ const initialState = [
 
 const About = () => {
   return (
-    <section className="pt-8 pb-14 lg:pt-16 lg:pb-28" id="about">
+    <section className="pt-8 pb-14 lg:pt-16 lg:pb-28 " id="about">
       <div className="container mx-auto">
         <div className="flex flex-col` items-center gap-2 mb-8">
           <motion.h2
@@ -65,14 +65,16 @@ const About = () => {
             return (
               <div
                 key={index}
-                className="flex flex-col justify-center items-center gap-4 border shadow-lg p-10`"
+                className="flex flex-col  items-center gap-4 border shadow-lg "
               >
-                <div className="text-4xl bg-accent text-white w-[80px] h-[80px] rounded-full flex justify-center items-center m-2">
-                  {item.icon}
+                <div className="flex justify-center   mt-6 ">
+                  <div className="text-4xl bg-accent text-white w-[85px] h-[85px] rounded-full flex justify-center items-center ">
+                    {item.icon}
+                  </div>
                 </div>
-                <div className="flex flex-col justify-center items-center gap-2 text-center">
-                  <h4 className="h4 text-primary-300 ">{item.title}</h4>
-                  <p className="mx-1">{item.description}</p>
+                <div className="flex flex-col justify-center items-center gap-2 text-center my-2">
+                  <h4 className="h4 text-primary-300 py-4">{item.title}</h4>
+                  <p className="px-4">{item.description}</p>
                 </div>
               </div>
             );

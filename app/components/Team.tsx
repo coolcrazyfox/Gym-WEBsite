@@ -68,7 +68,7 @@ const trainerInitData = [
 
 const Team = () => {
   return (
-    <section className="py- xl:h-[110vh] " id="team">
+    <section className="py- xl:h-[110vh]  " id="team">
       <div className="container mx-auto  h-full flex flex-col items-center justify-center">
         <motion.h2
           variants={fadeIn("up", 0.4)}
