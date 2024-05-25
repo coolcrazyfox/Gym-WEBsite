@@ -27,12 +27,33 @@ const initContact = [
   { name: "github", src: "", img: <FaGithub /> },
 ];
 
+const footerContainerVariant = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.6, duration: 0.5, ease: "linear" },
+  },
+};
+const footerItem = {
+  hidden: { y: 20, opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { duration: 0.5, ease: [0.25, 0.6, 0.3, 0.8] },
+  },
+};
+
 const Footer = () => {
   return (
     <footer className="bg-primary-300 pt-24">
       <div className="container mx-auto pb-24">
-        <motion.div className="text-white grid grid-cols-1 xl:grid-cols-4 gap-x-8 gap-y-12">
-          <div className="flex flex-col gap-4">
+        <motion.div
+          variants={footerContainerVariant}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="text-white grid grid-cols-1 xl:grid-cols-4 gap-x-8 gap-y-12"
+        >
+          <motion.div variants={footerItem} className="flex flex-col gap-4">
             <Link href="#">
               <Image
                 src={"/assets/img/logo.png"}
@@ -58,8 +79,8 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div variants={footerItem}>
             <h4 className="h4 text-accent mb-4">Recent blog post</h4>
             <div className="border-b border-dotted border-gray-400 flex flex-col gap-3 pb-3 mb-4">
               <Link href="#" className="hover:text-accent transition-all">
@@ -91,8 +112,8 @@ const Footer = () => {
                 </p>
               </Link>
             </div>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div variants={footerItem}>
             <h4 className="h4 text-accent mb-4">Gallery</h4>
             <div className="flex flex-wrap gap-2">
               {initTrainer.map((t, index) => {
@@ -103,8 +124,8 @@ const Footer = () => {
                 );
               })}
             </div>
-          </div>
-          <div>
+          </motion.div>
+          <motion.div variants={footerItem}>
             <h4 className="h4 text-accent mb-4">Newsletter</h4>
             <div className="flex flex-col gap-4">
               <p>
@@ -122,7 +143,7 @@ const Footer = () => {
                 <SuperButton containerStyles="h-[50px] px-8" text="send" />
               </form>
             </div>
-          </div>
+          </motion.div>
         </motion.div>
       </div>
       <div className="text-white border-t border-white/20 py-12">
