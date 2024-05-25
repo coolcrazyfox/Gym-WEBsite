@@ -94,7 +94,7 @@ const Blog = () => {
                       </p>
                       <Link
                         href={post.link}
-                        className="hover:text-accent transition-all duration-300"
+                        className="hover:text-accent transition-all duration-300 "
                       >
                         <h5 className="h5">{post.text}</h5>
                       </Link>
@@ -105,7 +105,7 @@ const Blog = () => {
             })}
             <SwiperNavButtons
               containerStyles="flex justify-between gap-1 absolute left-0 right-0 bottom-[16rem] w-full max-w-[370px] sm:max-w-[620px] md:max-w-[960px] xl:max-w-[1320px] mx-auto z-50 "
-              btnStyles="bg-primary-400 text-accent w-[50px] h-[50px] flex justify-center items-center  hover:bg-gray-100 transition-all duration-300"
+              btnStyles=" border border-accent text-white w-[50px] h-[50px] flex justify-center items-center  hover:bg-accent transition-all duration-300"
               iconStyles=" text-2xl"
             />
           </Swiper>
