@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/lib/variants";
 
 const initBrands = [
   { src: "/assets/img/brands/brand_1.png", link: "" },
@@ -13,8 +15,26 @@ const initBrands = [
 
 const Brands = () => {
   return (
-    <section className="h-[25vh] bg-blue-200" id="contact">
-      Brand
+    <section className="py-8" id="contact">
+      <div className="container mx-auto">
+        <div>
+          {initBrands.map((brand, index) => {
+            return (
+              <div key={index}>
+                <Link className="group" href={brand.link}>
+                  <Image
+                    src={brand.src}
+                    width={204}
+                    height={106}
+                    alt=""
+                    className="opacity-50 group-hover:opacity-100 transition-all mx-auto"
+                  />
+                </Link>
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </section>
   );
 };
