@@ -36,7 +36,7 @@ const Footer = () => {
                 alt=""
               />
             </Link>
-            <p className="max-w-sm">text</p>
+            <p className="max-w-sm">Contact information: </p>
             <ul className="flex flex-col gap-4">
               <li className="flex items-center gap-4">
                 <FaMapMarkerAlt className="text-xl text-accent" />
@@ -101,10 +101,32 @@ const Footer = () => {
           </div>
           <div>
             <h4 className="h4 text-accent mb-4">Newsletter</h4>
+            <div className="flex flex-col gap-4">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+                porro quae sequi hic consectetur inventore ullam quaerat
+                similique voluptas labore molestias ad unde autem, amet
+                sapiente, odit voluptates corrupti. Mollitia?
+              </p>
+              <form className="flex items-center">
+                <input
+                  type="text"
+                  placeholder="Your email"
+                  className="h-[50px] px-4 outline-none text-primary-300"
+                />
+                <SuperButton containerStyles="h-[50px] px-8" text="send" />
+              </form>
+            </div>
           </div>
         </div>
       </div>
-      <SuperButton containerStyles="" text="" />
+      <div className="text-white border-t border-white/20 py-12">
+        <div className="container mx-auto h-full">
+          <div>
+            <span>&copy; Malets Andrei 2024</span>
+          </div>
+        </div>
+      </div>
     </footer>
   );
 };
