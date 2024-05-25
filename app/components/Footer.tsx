@@ -12,6 +12,16 @@ import {
 } from "react-icons/fa";
 import SuperButton from "./SuperButton";
 
+const initTrainer = [
+  { name: "rosy", link: "/assets/img/trainers/rosy.jpg" },
+  { name: "david", link: "/assets/img/trainers/david.jpg" },
+  { name: "bob", link: "/assets/img/trainers/bob.jpg" },
+  { name: "matt", link: "/assets/img/trainers/matt.jpg" },
+  { name: "nichol", link: "/assets/img/trainers/nichol.jpg" },
+  { name: "sofia", link: "/assets/img/trainers/sofia.jpg" },
+  { name: "bill", link: "/assets/img/trainers/bill.jpg" },
+];
+
 const Footer = () => {
   return (
     <footer className="bg-primary-300 pt-24">
@@ -44,7 +54,7 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className="">
+          <div>
             <h4 className="h4 text-accent mb-4">Recent blog post</h4>
             <div className="border-b border-dotted border-gray-400 flex flex-col gap-3 pb-3 mb-4">
               <Link href="#" className="hover:text-accent transition-all">
@@ -75,6 +85,18 @@ const Footer = () => {
                   December 22, 2024
                 </p>
               </Link>
+            </div>
+          </div>
+          <div>
+            <h4 className="h4 text-accent mb-4">Gallery</h4>
+            <div>
+              {initTrainer.map((t, index) => {
+                return (
+                  <Link href="#">
+                    <Image src={t.link} width={100} height={100} alt="" />
+                  </Link>
+                );
+              })}
             </div>
           </div>
         </div>
