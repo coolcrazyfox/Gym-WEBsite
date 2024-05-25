@@ -6,11 +6,11 @@ import { motion } from "framer-motion";
 import { fadeIn } from "@/lib/variants";
 
 const initBrands = [
-  { src: "/assets/img/brands/brand_1.png", link: "" },
-  { src: "/assets/img/brands/brand_2.png", link: "" },
-  { src: "/assets/img/brands/brand_3.png", link: "" },
-  { src: "/assets/img/brands/brand_4.png", link: "" },
-  { src: "/assets/img/brands/brand_5.png", link: "" },
+  { src: "/assets/img/brands/brand1.png", link: "" },
+  { src: "/assets/img/brands/brand2.png", link: "" },
+  { src: "/assets/img/brands/brand3.png", link: "" },
+  { src: "/assets/img/brands/brand4.png", link: "" },
+  { src: "/assets/img/brands/brand5.png", link: "" },
 ];
 
 const Brands = () => {
