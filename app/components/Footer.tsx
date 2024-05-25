@@ -15,11 +15,11 @@ import SuperButton from "./SuperButton";
 const initTrainer = [
   { name: "rosy", link: "/assets/img/trainers/rosy.jpg" },
   { name: "david", link: "/assets/img/trainers/david.jpg" },
-  { name: "bob", link: "/assets/img/trainers/bob.jpg" },
   { name: "matt", link: "/assets/img/trainers/matt.jpg" },
-  { name: "nichol", link: "/assets/img/trainers/nichol.jpg" },
   { name: "sofia", link: "/assets/img/trainers/sofia.jpg" },
+  { name: "nichol", link: "/assets/img/trainers/nichol.jpg" },
   { name: "bill", link: "/assets/img/trainers/bill.jpg" },
+  { name: "bob", link: "/assets/img/trainers/bob.jpg" },
 ];
 
 const Footer = () => {
@@ -89,7 +89,7 @@ const Footer = () => {
           </div>
           <div>
             <h4 className="h4 text-accent mb-4">Gallery</h4>
-            <div>
+            <div className="flex flex-wrap gap-2">
               {initTrainer.map((t, index) => {
                 return (
                   <Link href="#">
@@ -98,6 +98,9 @@ const Footer = () => {
                 );
               })}
             </div>
+          </div>
+          <div>
+            <h4 className="h4 text-accent mb-4">Newsletter</h4>
           </div>
         </div>
       </div>
