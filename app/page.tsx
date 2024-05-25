@@ -18,7 +18,6 @@ export default function Home() {
       <Feedback />
       <Blog />
       <Brands />
-      <div className={"h-[3000px]"}></div>
     </main>
   );
 }
