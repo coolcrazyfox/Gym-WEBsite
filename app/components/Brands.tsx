@@ -15,9 +15,9 @@ const initBrands = [
 
 const Brands = () => {
   return (
-    <section className="py-8" id="contact">
-      <div className="container mx-auto">
-        <div>
+    <section className=" h-[400px] " id="contact">
+      <div className="container mx-auto  ">
+        <div className="border border-red-600">
           {initBrands.map((brand, index) => {
             return (
               <div key={index}>
