@@ -28,8 +28,8 @@ const brandItem = {
 
 const Brands = () => {
   return (
-    <section className="py-8 " id="contact">
-      <div className="container mx-auto  ">
+    <section className="py-8 min-h-[45vh]" id="contact">
+      <div className="container mx-auto  lg:my-24">
         <motion.div
           variants={brandContainerVariant}
           initial="hidden"
