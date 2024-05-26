@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import NavBar from "./NavBar";
 import MobileNav from "./MobileNav";
+import NavBar from "./NavBar";
 import Link from "next/link";
 import Image from "next/image";
 import { MdOutlineMenu } from "react-icons/md";
